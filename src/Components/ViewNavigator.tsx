@@ -1,10 +1,10 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 
 const ViewNavigator: React.FC = () => {
   return (
     <Switch>
-      <Route exact path="/" />
+      <Route exact path='/' />
     </Switch>
   );
 };

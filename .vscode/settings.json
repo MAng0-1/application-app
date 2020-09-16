@@ -3,6 +3,7 @@
   "typescript.format.enable": false,
   "prettier.requireConfig": true,
   "files.exclude": {
+    "**/package-lock.json": true,
     "**/.git": true,
     "**/.svn": true,
     "**/.hg": true,
