@@ -1,11 +1,7 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true
-  },
+  "eslint.debug": true,
+  "typescript.format.enable": false,
   "prettier.requireConfig": true,
-  "versionlens.showVersionLensesAtStartup": false,
-  "typescript.preferences.importModuleSpecifier": "relative",
-  "typescript.suggest.paths": false,
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,

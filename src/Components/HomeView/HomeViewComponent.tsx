@@ -1,15 +1,9 @@
-import React, {FC} from 'react';
-import 
+import React, { FC } from 'react';
 
 type Props = {};
 
 const HomeViewComponent: FC<Props> = () => {
-
-  return(
-    <Styles.CardContainer>
-      <StyleSh
-    </Styles.CardContainer>
-  );
-}
+  return <Styles.CardContainer></Styles.CardContainer>;
+};
 
 export default HomeViewComponent;
