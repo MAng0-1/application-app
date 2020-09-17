@@ -1,7 +1,8 @@
 {
   "eslint.debug": true,
-  "typescript.format.enable": false,
+  "prettier.bracketSpacing": true,
   "prettier.requireConfig": true,
+  "typescript.format.enable": false,
   "files.exclude": {
     "**/package-lock.json": true,
     "**/.git": true,
