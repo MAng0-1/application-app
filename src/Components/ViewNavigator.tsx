@@ -2,14 +2,12 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import HomeViewComponent from './HomeView/HomeViewComponent';
 
-type Props = null;
-
 type State = {
   contentIterator: number;
 };
 
-class ViewNavigator extends Component<Props, State> {
-  constructor(props: Props) {
+class ViewNavigator extends Component<{}, State> {
+  constructor(props: any) {
     super(props);
     this.state = {
       contentIterator: 0,
