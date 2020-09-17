@@ -14,6 +14,7 @@ function getStoredText(index: number): string {
 
 const HomeViewComponent: FC<Props> = (props) => {
   let textContent = () => getStoredText(props.iterate(CurrentView.length));
+
   return (
     <Styles.CardContainer>
       <Styles.TextCard.Heading>{textContent}</Styles.TextCard.Heading>
@@ -22,17 +23,17 @@ const HomeViewComponent: FC<Props> = (props) => {
 
       <Styles.TextImageCard>
         <Styles.TextCard.Prose>{textContent}</Styles.TextCard.Prose>
-        <Styles.ImageCard></Styles.ImageCard>
+        <Styles.ImageCard />
       </Styles.TextImageCard>
 
-      <Styles.TextImageCard>
-        <Styles.ImageCard></Styles.ImageCard>
+      {/* <Styles.TextImageCard>
+        <Styles.ImageCard/>
         <Styles.TextCard.Prose>{textContent}</Styles.TextCard.Prose>
       </Styles.TextImageCard>
 
       <Styles.TextCard.Quote>{textContent}</Styles.TextCard.Quote>
 
-      <Styles.ImageCard></Styles.ImageCard>
+      <Styles.ImageCard/> */}
     </Styles.CardContainer>
   );
 };
