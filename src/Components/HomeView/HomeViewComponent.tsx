@@ -1,4 +1,7 @@
 import React, { FC } from 'react';
+import Cat01 from '../../data/images/image_1.jpg';
+import Cat02 from '../../data/images/image_2.jpg';
+import Cat03 from '../../data/images/image_3.jpg';
 import { HomeView as CurrentView } from '../../data/text-sources.json';
 import { HomeViewStyles as Styles } from './HomeView.resources';
 
@@ -13,27 +16,31 @@ function getStoredText(index: number): string {
 }
 
 const HomeViewComponent: FC<Props> = (props) => {
-  let textContent = () => getStoredText(props.iterate(CurrentView.length));
-
   return (
     <Styles.CardContainer>
-      <Styles.TextCard.Heading>{textContent}</Styles.TextCard.Heading>
+      <Styles.TextCard.Heading>{getStoredText(0)}</Styles.TextCard.Heading>
 
-      <Styles.TextCard.Prose>{textContent}</Styles.TextCard.Prose>
+      <Styles.CenteredContainer>
+        <Styles.TextCard.Prose>{getStoredText(1)}</Styles.TextCard.Prose>
+      </Styles.CenteredContainer>
 
-      <Styles.TextImageCard>
-        <Styles.TextCard.Prose>{textContent}</Styles.TextCard.Prose>
-        <Styles.ImageCard />
-      </Styles.TextImageCard>
+      <Styles.SplitContainer>
+        <Styles.TextCard.Prose>{getStoredText(2)}</Styles.TextCard.Prose>
+        <Styles.ImageCard src={Cat01} alt='cute cat' />
+      </Styles.SplitContainer>
 
-      {/* <Styles.TextImageCard>
-        <Styles.ImageCard/>
-        <Styles.TextCard.Prose>{textContent}</Styles.TextCard.Prose>
-      </Styles.TextImageCard>
+      <Styles.SplitContainer>
+        <Styles.ImageCard src={Cat02} alt='sleepy cat' />
+        <Styles.TextCard.Prose>{getStoredText(3)}</Styles.TextCard.Prose>
+      </Styles.SplitContainer>
 
-      <Styles.TextCard.Quote>{textContent}</Styles.TextCard.Quote>
+      <Styles.CenteredContainer>
+        <Styles.TextCard.Quote>{getStoredText(4)}</Styles.TextCard.Quote>
+      </Styles.CenteredContainer>
 
-      <Styles.ImageCard/> */}
+      <Styles.CenteredContainer>
+        <Styles.ImageCard src={Cat03} alt='curious cat' />
+      </Styles.CenteredContainer>
     </Styles.CardContainer>
   );
 };
