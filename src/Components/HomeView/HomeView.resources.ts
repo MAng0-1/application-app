@@ -51,6 +51,6 @@ export const HomeViewStyles = {
     display: block;
     max-width: 100%;
     width: auto;
-    height: 100%;
+    height: 25em;
   `,
 };
