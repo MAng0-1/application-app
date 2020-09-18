@@ -1,49 +1,56 @@
 import styled from 'styled-components';
-import { Margin } from '../shared.resources';
+import { Font, Margin } from '../Shared.resources';
 
 export const HomeViewStyles = {
-  CardContainer: styled.div`
+  DeckContainer: styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
   `,
 
-  CenteredContainer: styled.div`
+  Sleeve: styled.div`
     width: 100%;
+    max-height 25em;
     display: flex;
     justify-content: center;
-    background-color: darkgrey;
-    margin-bottom: ${Margin.small};
-  `,
-
-  SplitContainer: styled.div`
-    display: flex;
-    margin-bottom: ${Margin.small};
+    margin-bottom: ${Margin.large};
   `,
 
   TextCard: {
     Heading: styled.div`
-      text-decoration: underline;
-      font: 700 1.777em auto;
+      text-decoration: underline double;
+      font: ${Font.large};
       text-align: center;
-      margin-bottom: ${Margin.large};
-      margin-top: ${Margin.medium};
-      width: 100%;
+      margin: ${Margin.medium} ${Margin.small} ${Margin.large};
+      width: auto;
     `,
     Prose: styled.div`
       text-align: justify;
+      font: ${Font.medium};
       padding: 1em;
-      width: 80%;
+      width: 90%;
       background-color: white;
       display: flex;
       align-items: center;
+      min-width: initial;
+      overflow-y: auto;
     `,
-    Quote: styled.div``,
+    Quote: styled.div`
+      font: ${Font.mediumlarge};
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2em 10em;
+      max-width: 80%;
+      background-color: white;
+    `,
   },
 
   ImageCard: styled.img`
-    background: darkgrey;
-    height 300px;
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: 100%;
   `,
 };

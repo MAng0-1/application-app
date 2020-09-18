@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import CatJam from '../../data/images/gif_01.gif';
 import Cat01 from '../../data/images/image_1.jpg';
 import Cat02 from '../../data/images/image_2.jpg';
 import Cat03 from '../../data/images/image_3.jpg';
@@ -17,31 +18,36 @@ function getStoredText(index: number): string {
 
 const HomeViewComponent: FC<Props> = (props) => {
   return (
-    <Styles.CardContainer>
+    <Styles.DeckContainer>
       <Styles.TextCard.Heading>{getStoredText(0)}</Styles.TextCard.Heading>
 
-      <Styles.CenteredContainer>
+      <Styles.Sleeve>
         <Styles.TextCard.Prose>{getStoredText(1)}</Styles.TextCard.Prose>
-      </Styles.CenteredContainer>
+      </Styles.Sleeve>
 
-      <Styles.SplitContainer>
+      <Styles.Sleeve>
         <Styles.TextCard.Prose>{getStoredText(2)}</Styles.TextCard.Prose>
         <Styles.ImageCard src={Cat01} alt='cute cat' />
-      </Styles.SplitContainer>
+      </Styles.Sleeve>
 
-      <Styles.SplitContainer>
+      <Styles.Sleeve>
         <Styles.ImageCard src={Cat02} alt='sleepy cat' />
         <Styles.TextCard.Prose>{getStoredText(3)}</Styles.TextCard.Prose>
-      </Styles.SplitContainer>
+      </Styles.Sleeve>
 
-      <Styles.CenteredContainer>
+      <Styles.Sleeve>
         <Styles.TextCard.Quote>{getStoredText(4)}</Styles.TextCard.Quote>
-      </Styles.CenteredContainer>
+      </Styles.Sleeve>
 
-      <Styles.CenteredContainer>
+      <Styles.Sleeve>
         <Styles.ImageCard src={Cat03} alt='curious cat' />
-      </Styles.CenteredContainer>
-    </Styles.CardContainer>
+      </Styles.Sleeve>
+
+      <Styles.Sleeve>
+        <Styles.TextCard.Heading>Radio Quarantino be like:</Styles.TextCard.Heading>
+        <Styles.ImageCard src={CatJam} alt='catjam pog' />
+      </Styles.Sleeve>
+    </Styles.DeckContainer>
   );
 };
 
