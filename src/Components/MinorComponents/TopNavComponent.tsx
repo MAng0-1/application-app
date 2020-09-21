@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { SharedStyles as Styles } from './Minor.resources';
+import { TopNavStyles as Styles } from './Minor.resources';
 
 type Props = {};
 
