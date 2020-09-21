@@ -1,15 +1,13 @@
 import React, { FC } from 'react';
-import CatJam from '../../data/images/gif_01.gif';
-import Cat01 from '../../data/images/image_1.jpg';
-import Cat02 from '../../data/images/image_2.jpg';
-import Cat03 from '../../data/images/image_3.jpg';
-import { HomeView as CurrentView } from '../../data/text-sources.json';
-import Topnav from '../MinorComponents/TopNavComponent';
+import CatJam from '../../../data/images/gif_01.gif';
+import Cat01 from '../../../data/images/image_1.jpg';
+import Cat02 from '../../../data/images/image_2.jpg';
+import Cat03 from '../../../data/images/image_3.jpg';
+import { HomeView as CurrentView } from '../../../data/text-sources.json';
+import Topnav from '../../MinorComponents/TopNavComponent';
 import { HomeViewStyles as Styles } from './HomeView.resources';
 
-type Props = {
-  iterate: (length: number) => number;
-};
+type Props = {};
 
 function getStoredText(index: number): string {
   return index === CurrentView[index].index
@@ -19,7 +17,7 @@ function getStoredText(index: number): string {
 
 const HomeViewComponent: FC<Props> = (props) => {
   return (
-    <Styles.DeckContainer>
+    <Styles.ContentContainer>
       <Topnav />
       <Styles.TextCard.Heading>{getStoredText(0)}</Styles.TextCard.Heading>
 
@@ -49,7 +47,7 @@ const HomeViewComponent: FC<Props> = (props) => {
         <Styles.TextCard.Heading>Radio Quarantino be like:</Styles.TextCard.Heading>
         <Styles.ImageCard src={CatJam} alt='catjam pog' />
       </Styles.Sleeve>
-    </Styles.DeckContainer>
+    </Styles.ContentContainer>
   );
 };
 
