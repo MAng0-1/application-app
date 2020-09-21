@@ -50,11 +50,13 @@ class AccordionComponent extends Component<Props, Status> {
   }
 
   handleClick(): boolean | undefined {
-    return this.panelRef.current?.classList.toggle('is-panel-closed');
+    return this.panelRef.current?.classList.toggle('is-panel-open');
   }
 
   componentDidMount() {
     if (this.panelRef.current != null) {
+      //handleClick does not work here, the transition is too slow
+      const a = this.panelRef.current?.classList.toggle('render-open');
       this.setState({ panelHeight: this.panelRef.current.clientHeight });
     }
   }

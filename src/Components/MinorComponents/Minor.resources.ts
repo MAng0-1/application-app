@@ -48,13 +48,16 @@ export const AccordionStyles = {
   Panel: styled.div<{ ph: number }>`
     background-color: white;
     width: 90%;
-    max-height: ${(props) => props.ph}px;
-    padding: 3%;
-    transition: max-height 0.25s ease-in-out, padding 0.1s 0.2s;
+    max-height: 0;
     overflow: hidden;
-    &.is-panel-closed {
-      padding: 0;
-      max-height: 0;
+    transition: max-height 0.25s ease-in-out, padding 0.2s ease-in-out;
+    &.is-panel-open {
+      padding: 3%;
+      max-height: ${(props) => props.ph}px;
+    }
+    &.render-open {
+      max-height: ${(props) => props.ph}px;
+      transition: max-height 0s;
     }
   `,
   Container: styled.div`
