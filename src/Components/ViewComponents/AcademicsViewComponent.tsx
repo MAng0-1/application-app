@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
-import Cat03 from '../../../data/images/image_3.jpg';
-import { AcademicsView as CurrentView } from '../../../data/text-sources.json';
-import Accordion from '../../MinorComponents/AccordionComponent';
-import TopNavComponent from '../../MinorComponents/TopNavComponent';
-import { SharedStyles as Styles } from '../../Shared.resources';
+import Cat03 from '../../data/images/image_3.jpg';
+import { AcademicsView as CurrentView } from '../../data/text-sources.json';
+import Accordion from '../MinorComponents/AccordionComponent';
+import TopNavComponent from '../MinorComponents/TopNavComponent';
+import { SharedStyles as Styles } from '../Shared.resources';
 
 type Props = {};
 

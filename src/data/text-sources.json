@@ -33,7 +33,7 @@
       "type": "prose"
     },
     {
-      "content": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "content": "Tab #1",
       "index": 1,
       "type": "title"
     },
@@ -43,7 +43,7 @@
       "type": "prose"
     },
     {
-      "content": "ccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "content": "The other tab",
       "index": 3,
       "type": "title"
     }

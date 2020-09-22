@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import AcademicsViewComponent from './ViewComponents/AcademicsView/AcademicsViewComponent';
-import GalleryViewComponent from './ViewComponents/GalleryView/GalleryViewComponent';
-import HomeViewComponent from './ViewComponents/HomeView/HomeViewComponent';
-import ProjectsViewComponent from './ViewComponents/ProjectsView/ProjectsViewComponent';
+import AcademicsViewComponent from './ViewComponents/AcademicsViewComponent';
+import GalleryViewComponent from './ViewComponents/GalleryViewComponent';
+import HomeViewComponent from './ViewComponents/HomeViewComponent';
+import ProjectsViewComponent from './ViewComponents/ProjectsViewComponent';
 
 type State = {
   contentIterator: number;
