@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { Margin } from '../Shared.resources';
+import { Font, Margin } from '../Shared.resources';
 
 export const TopNavStyles = {
   Container: styled.div`
@@ -31,7 +31,8 @@ export const AccordionStyles = {
     color: white;
     width: 100%;
     height 100%;
-    padding: 1em;
+    padding: 0.5em;
+    font: ${Font.standard};
     border: solid white 1px;
     border-radius: 0.5em;
     cursor: pointer;
@@ -45,15 +46,13 @@ export const AccordionStyles = {
     width: 90%;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.25s ease-in-out, padding 0.2s ease-in-out, margin 0.2s ease-in-out;
     margin-bottom: 0;
     &.is-panel-open {
       padding: 2%;
       max-height: ${(props) => props.ph}px;
     }
-    &.render-open {
-      max-height: 5000px;
-      transition: max-height 0s;
+    &.with-transition {
+      transition: max-height 0.25s ease-in-out, padding 0.2s ease-in-out, margin 0.2s ease-in-out;
     }
   `,
   Container: styled.div`

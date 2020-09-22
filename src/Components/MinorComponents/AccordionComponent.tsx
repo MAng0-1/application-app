@@ -37,26 +37,31 @@ import { AccordionStyles as Styles } from './Minor.resources';
 
 type Props = { title: string };
 
-type Status = { panelHeight: number };
+type State = { panelHeight: number; isTransitionActive: boolean | undefined };
 
-class AccordionComponent extends Component<Props, Status> {
+class AccordionComponent extends Component<Props, State> {
   private panelRef: React.RefObject<HTMLDivElement>;
 
   constructor(props: Props) {
     super(props);
-    this.state = { panelHeight: 0 };
+    this.state = { panelHeight: 5000, isTransitionActive: false };
     this.panelRef = React.createRef();
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(): boolean | undefined {
+    //to accomodate measuring the panel in componentDidMount, the transition property is introduced via the first click
+    if (this.state.isTransitionActive == false) {
+      this.setState({
+        isTransitionActive: this.panelRef.current?.classList.toggle('with-transition'),
+      });
+    }
     return this.panelRef.current?.classList.toggle('is-panel-open');
   }
 
   componentDidMount() {
     if (this.panelRef.current != null) {
-      //handleClick does not work here, the transition is too slow
-      const a = this.panelRef.current?.classList.toggle('render-open');
+      const a = this.panelRef.current?.classList.toggle('is-panel-open');
       this.setState({ panelHeight: this.panelRef.current.clientHeight });
     }
   }

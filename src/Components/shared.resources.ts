@@ -18,15 +18,10 @@ export const Font = {
 };
 
 export const SharedStyles = {
-  ContentContainer: styled.div<{ widthP?: number }>`
+  ContentContainer: styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    max-width: ${(props) => {
-      return props.widthP ?? 100;
-    }}%;
-    height: 100%;
 
     &:last-child {
       margin-bottom: ${Margin.medium};
