@@ -58,7 +58,6 @@ export const SharedStyles = {
       background-color: white;
       display: flex;
       align-items: center;
-      min-width: initial;
       overflow-y: auto;
     `,
     Quote: styled.div`
@@ -73,11 +72,11 @@ export const SharedStyles = {
   },
   //images have a standard height of 25em, they can be scaled percentage-wise with widthP
   ImageCard: styled.img<{ widthP?: number }>`
-    display: block;
+    align-self: center;
     max-width: ${(props) => {
-      return props.widthP ?? 40;
+      return props.widthP ?? 50;
     }}%;
     width: ${(props) => (props.widthP != null ? '100%' : 'auto')};
-    height: ${(props) => (props.widthP != null ? 'auto' : '25em')};
+    height: ${(props) => (props.widthP != null ? '100%' : '25em')};
   `,
 };
