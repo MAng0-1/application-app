@@ -1,37 +1,3 @@
-// import React, { FC, useEffect, useState } from 'react';
-// import { AccordionStyles as Styles } from './Minor.resources';
-
-// type Props = { title: string };
-// const panelRef = React.createRef<HTMLDivElement>();
-
-// function handleClick() {
-//   const a = panelRef.current?.classList.toggle('is-panel-closed');
-// }
-
-// const AccordionComponent: FC<Props> = (props) => {
-//   const [panelHeight, setPanelHeight] = useState(5000);
-
-//   //sets the height value of the hidden panel as the max-height for transition purposes
-//   useEffect(() => {
-//     if (panelRef.current != null) {
-//       setPanelHeight(panelRef.current.clientHeight);
-//       handleClick();
-//     }
-//   }, [panelHeight]);
-
-//   return (
-//     <Styles.Container>
-//       <Styles.Handle onClick={handleClick}>{props.title}</Styles.Handle>
-//       <Styles.Panel ref={panelRef} ph={panelHeight}>
-//         {' '}
-//         {props.children}
-//       </Styles.Panel>
-//     </Styles.Container>
-//   );
-// };
-
-// export default AccordionComponent;
-
 import React, { Component } from 'react';
 import { AccordionStyles as Styles } from './Minor.resources';
 
@@ -41,11 +7,13 @@ type State = { panelHeight: number; isTransitionActive: boolean | undefined };
 
 class AccordionComponent extends Component<Props, State> {
   private panelRef: React.RefObject<HTMLDivElement>;
+  private iconRef: React.RefObject<HTMLDivElement>;
 
   constructor(props: Props) {
     super(props);
     this.state = { panelHeight: 5000, isTransitionActive: false };
     this.panelRef = React.createRef();
+    this.iconRef = React.createRef();
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -56,6 +24,7 @@ class AccordionComponent extends Component<Props, State> {
         isTransitionActive: this.panelRef.current?.classList.toggle('with-transition'),
       });
     }
+    const icon = this.iconRef.current?.classList.toggle('is-panel-open');
     return this.panelRef.current?.classList.toggle('is-panel-open');
   }
 
@@ -69,7 +38,14 @@ class AccordionComponent extends Component<Props, State> {
   render() {
     return (
       <Styles.Container>
-        <Styles.Handle onClick={this.handleClick}>{this.props.title}</Styles.Handle>
+        <Styles.Handle onClick={this.handleClick}>
+          <Styles.SvgContainer ref={this.iconRef}>
+            <Styles.SvgFit>
+              <polygon points='26,33 43,23 26,13' fill='none' stroke='white' />
+            </Styles.SvgFit>
+          </Styles.SvgContainer>
+          {this.props.title}
+        </Styles.Handle>
         <Styles.Panel ref={this.panelRef} ph={this.state.panelHeight}>
           {' '}
           {this.props.children}

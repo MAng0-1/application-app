@@ -30,7 +30,9 @@ export const AccordionStyles = {
     background-color: slategrey;
     color: white;
     width: 100%;
-    height 100%;
+    height 4em;
+    display: flex;
+    align-items: center;
     padding: 0.5em;
     font: ${Font.standard};
     border: solid white 1px;
@@ -61,5 +63,18 @@ export const AccordionStyles = {
     align-items: center;
     flex-direction: column;
     width: 80%;
+  `,
+  SvgContainer: styled.div`
+    height: 100%;
+    width: 4em;
+    transition: transform 0.2s;
+
+    &.is-panel-open {
+      transform: rotate(90deg);
+    }
+  `,
+  SvgFit: styled.svg`
+    height: 100%;
+    width: 100%;
   `,
 };
