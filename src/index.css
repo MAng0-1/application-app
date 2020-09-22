@@ -2,6 +2,7 @@ html,
 body,
 #root {
   background-color: lightgrey;
+  scrollbar-width: none;
 }
 
 body {

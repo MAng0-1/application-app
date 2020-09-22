@@ -26,5 +26,26 @@
       "type": "quote"
     }
   ],
-  "AcView": []
+  "AcademicsView": [
+    {
+      "content": "This is an AcademicsViewComponent",
+      "index": 0,
+      "type": "prose"
+    },
+    {
+      "content": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "index": 1,
+      "type": "title"
+    },
+    {
+      "content": "Lacus sed viverra tellus in hac habitasse platea dictumst. Dui sapien eget mi proin sed. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Neque viverra justo nec ultrices. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Scelerisque eu ultrices vitae auctor eu augue ut. Rhoncus est pellentesque elit ullamcorper. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Et netus et malesuada fames ac turpis.",
+      "index": 2,
+      "type": "prose"
+    },
+    {
+      "content": "ccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "index": 3,
+      "type": "title"
+    }
+  ]
 }

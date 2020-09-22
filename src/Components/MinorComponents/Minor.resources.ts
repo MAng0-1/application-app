@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { Margin } from '../Shared.resources';
 
 export const TopNavStyles = {
@@ -25,15 +25,6 @@ export const TopNavStyles = {
   `,
 };
 
-const stretch = keyframes`
-  from {
-    height: 0;
-  }
-  to {
-    height: 1000px;
-  }
-`;
-
 export const AccordionStyles = {
   Handle: styled.button`
     background-color: slategrey;
@@ -44,19 +35,24 @@ export const AccordionStyles = {
     border: solid white 1px;
     border-radius: 0.5em;
     cursor: pointer;
+
+    &:focus{
+      outline: none;
+    }
   `,
   Panel: styled.div<{ ph: number }>`
     background-color: white;
     width: 90%;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.25s ease-in-out, padding 0.2s ease-in-out;
+    transition: max-height 0.25s ease-in-out, padding 0.2s ease-in-out, margin 0.2s ease-in-out;
+    margin-bottom: 0;
     &.is-panel-open {
-      padding: 3%;
+      padding: 2%;
       max-height: ${(props) => props.ph}px;
     }
     &.render-open {
-      max-height: ${(props) => props.ph}px;
+      max-height: 5000px;
       transition: max-height 0s;
     }
   `,

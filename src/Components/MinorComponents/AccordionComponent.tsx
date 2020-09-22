@@ -44,7 +44,7 @@ class AccordionComponent extends Component<Props, Status> {
 
   constructor(props: Props) {
     super(props);
-    this.state = { panelHeight: 5000 };
+    this.state = { panelHeight: 0 };
     this.panelRef = React.createRef();
     this.handleClick = this.handleClick.bind(this);
   }

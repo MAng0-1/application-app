@@ -18,10 +18,24 @@ export const Font = {
 };
 
 export const SharedStyles = {
-  ContentContainer: styled.div`
+  ContentContainer: styled.div<{ widthP?: number }>`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    max-width: ${(props) => {
+      return props.widthP ?? 100;
+    }}%;
+    height: 100%;
+
+    &:last-child {
+      margin-bottom: ${Margin.medium};
+    }
+  `,
+
+  VerticalSplit: styled.div`
+    display: flex;
+    width: 100%;
     height: 100%;
   `,
 
@@ -30,7 +44,7 @@ export const SharedStyles = {
     max-height 25em;
     display: flex;
     justify-content: center;
-    margin-bottom: ${Margin.large};
+    margin: ${Margin.medium} 0 ${Margin.medium};
   `,
 
   TextCard: {
@@ -44,7 +58,7 @@ export const SharedStyles = {
     Prose: styled.div`
       text-align: justify;
       font: ${Font.medium};
-      padding: 1em;
+      padding: 1em 2em;
       width: 90%;
       background-color: white;
       display: flex;
@@ -62,11 +76,13 @@ export const SharedStyles = {
       background-color: white;
     `,
   },
-
-  ImageCard: styled.img`
+  //images have a standard height of 25em, they can be scaled percentage-wise with widthP
+  ImageCard: styled.img<{ widthP?: number }>`
     display: block;
-    max-width: 100%;
-    width: auto;
-    height: 25em;
+    max-width: ${(props) => {
+      return props.widthP ?? 40;
+    }}%;
+    width: ${(props) => (props.widthP != null ? '100%' : 'auto')};
+    height: ${(props) => (props.widthP != null ? 'auto' : '25em')};
   `,
 };
