@@ -8,7 +8,7 @@ export const TopNavStyles = {
     background-color: slategrey;
     padding: 0.5em 0 0;
     width: 100%;
-    margin-bottom: ${Margin.large};
+    margin-bottom: ${Margin.medium};
     display: block;
   `,
 
@@ -76,5 +76,35 @@ export const AccordionStyles = {
   SvgFit: styled.svg`
     height: 100%;
     width: 100%;
+  `,
+};
+
+export const TabButtonStyles = {
+  TabButton: styled.div`
+    height: 1.25em;
+    font: ${Font.mediumlarge};
+    appearance: button;
+    text-rendering: auto;
+    color: darkslategrey;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: pointer;
+    border-bottom: solid lightslategrey 0.15em;
+    transition: border-bottom 0.2s;
+    padding: 0.5em 0.8em;
+
+    &:active {
+      border-bottom: solid red 0.15em;
+    }
+
+    &:first-child {
+      padding-left: 0.4em;
+    }
+
+    &:last-child {
+      margin-right: 30%;
+      padding-right: 0.5em;
+    }
   `,
 };

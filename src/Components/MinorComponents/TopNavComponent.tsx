@@ -10,6 +10,7 @@ const TopNavComponent: FC<Props> = () => {
       <Styles.NavButton to='/academics'> Academics</Styles.NavButton>
       <Styles.NavButton to='/projects'> Projects </Styles.NavButton>
       <Styles.NavButton to='/gallery'> Gallery </Styles.NavButton>
+      <Styles.NavButton to='/about'> About this Website </Styles.NavButton>
     </Styles.Container>
   );
 };
