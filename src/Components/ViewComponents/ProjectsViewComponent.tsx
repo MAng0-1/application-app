@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import TabButton from '../MinorComponents/TabButtonComponent';
+import TabBar from '../MinorComponents/TabBarComponent';
 import Topnav from '../MinorComponents/TopNavComponent';
 import { SharedStyles as Styles } from '../Shared.resources';
 
@@ -9,11 +9,11 @@ const ProjectsViewComponent: FC<Props> = () => {
   return (
     <Styles.ContentContainer>
       <Topnav />
-      <Styles.MenuSleeve>
-        <TabButton> Centigrade </TabButton>
-        <TabButton> Company 2 </TabButton>
-        <TabButton> Company 3 </TabButton>
-      </Styles.MenuSleeve>
+      <TabBar titles={['Centigrade', 'Company2', 'Company3']}>
+        <Styles.TabContent> aaaaaaaaaaaaaa </Styles.TabContent>
+        <Styles.TabContent> bbbbbbbbbbbbbb </Styles.TabContent>
+        <Styles.TabContent> cccccccccccccc </Styles.TabContent>
+      </TabBar>
     </Styles.ContentContainer>
   );
 };

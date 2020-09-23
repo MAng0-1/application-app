@@ -80,10 +80,7 @@ export const SharedStyles = {
     height: ${(props) => (props.widthP != null ? '100%' : '25em')};
   `,
 
-  MenuSleeve: styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    margin: 0 0 ${Margin.medium};
+  TabContent: styled.div`
+    display: none;
   `,
 };

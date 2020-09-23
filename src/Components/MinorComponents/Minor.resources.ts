@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { Font, Margin } from '../Shared.resources';
+import { Font, Margin, SharedStyles } from '../Shared.resources';
 
 export const TopNavStyles = {
   Container: styled.div`
@@ -79,8 +79,16 @@ export const AccordionStyles = {
   `,
 };
 
-export const TabButtonStyles = {
-  TabButton: styled.div`
+export const TabBarStyles = {
+  TabContainer: styled.div``,
+  TabSlider: styled.div``,
+  TabContentContainer: styled.div<{ showChild: number }>`
+    div:nth-child(${(props) => props.showChild}) {
+      display: flex;
+    }
+  `,
+
+  TabButton: styled.div<{ position?: number }>`
     height: 1.25em;
     font: ${Font.mediumlarge};
     appearance: button;
@@ -106,5 +114,12 @@ export const TabButtonStyles = {
       margin-right: 30%;
       padding-right: 0.5em;
     }
+  `,
+
+  TabBar: styled(SharedStyles.Sleeve)`
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 ${Margin.medium};
   `,
 };
