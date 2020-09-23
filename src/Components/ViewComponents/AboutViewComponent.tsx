@@ -4,7 +4,7 @@ import { SharedStyles as Styles } from '../Shared.resources';
 
 type Props = {};
 
-const GalleryViewComponent: FC<Props> = () => {
+const AboutViewComponent: FC<Props> = () => {
   return (
     <Styles.ContentContainer>
       <Topnav />
@@ -13,4 +13,4 @@ const GalleryViewComponent: FC<Props> = () => {
   );
 };
 
-export default GalleryViewComponent;
+export default AboutViewComponent;

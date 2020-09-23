@@ -23,7 +23,7 @@ class TabBarComponent extends Component<Props, State> {
     this.buttonRef = null;
     this.setButtonRef = (element) => {
       this.buttonRef = element;
-      this.buttonWidth.push(element.clientWidth);
+      if (element !== null) this.buttonWidth.push(element.clientWidth);
     };
   }
 

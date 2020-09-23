@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import AboutViewComponent from './ViewComponents/AboutViewComponent';
 import AcademicsViewComponent from './ViewComponents/AcademicsViewComponent';
 import GalleryViewComponent from './ViewComponents/GalleryViewComponent';
 import HomeViewComponent from './ViewComponents/HomeViewComponent';
@@ -32,6 +33,7 @@ class ViewNavigator extends Component<{}, State> {
         <Route exact path='/academics' component={AcademicsViewComponent} />
         <Route exact path='/projects' component={ProjectsViewComponent} />
         <Route exact path='/gallery' component={GalleryViewComponent} />
+        <Route exact path='/about' component={AboutViewComponent} />
       </Switch>
     );
   }

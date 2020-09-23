@@ -86,7 +86,7 @@ export const TabBarStyles = {
       display: none;
     }
 
-    div:nth-child(${(props) => props.showChild} + 1) {
+    div:nth-child(${(props) => props.showChild + 1}) {
       display: flex;
     }
   `,
