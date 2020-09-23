@@ -86,7 +86,7 @@ export const TabBarStyles = {
       display: none;
     }
 
-    div:nth-child(${(props) => props.showChild}) {
+    div:nth-child(${(props) => props.showChild} + 1) {
       display: flex;
     }
   `,
@@ -104,10 +104,6 @@ export const TabBarStyles = {
     border-bottom: solid lightslategrey 0.15em;
     padding: 0.5em 0.8em;
 
-    &:active {
-      border-bottom: solid darkseagreen 0.15em;
-    }
-
     &:first-child {
       padding-left: 0.45em;
     }
@@ -118,12 +114,19 @@ export const TabBarStyles = {
     }
   `,
 
-  TabSlider: styled.div`
+  TabSlider: styled.div<{ buttonW: number[]; selected: number }>`
     height: 0.26em;
     background-color: darkslategrey;
-    width: 10em;
+    width: ${(p) => p.buttonW[p.selected]}px;
     position: relative;
     bottom: 2.26em;
+    left: ${(p) => {
+      let val: number = 0;
+      for (let i: number = 0; i < p.selected; i++) val = val + p.buttonW[i];
+      return val;
+    }}px;
+
+    transition: width 0.2s ease-in-out, left 0.2s ease-in-out;
   `,
 
   TabBar: styled(SharedStyles.Sleeve)`

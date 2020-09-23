@@ -10,6 +10,7 @@ type State = {
 };
 
 class TabBarComponent extends Component<Props, State> {
+  // tabButtons: JSX.Element[];
   contentRef: React.RefObject<HTMLDivElement>;
   buttonRef: React.RefObject<HTMLDivElement> | null;
   setButtonRef: (e: any) => void;
@@ -17,7 +18,7 @@ class TabBarComponent extends Component<Props, State> {
 
   constructor(props: Props) {
     super(props);
-    this.state = { selectedTab: 1 };
+    this.state = { selectedTab: 0 };
     this.contentRef = React.createRef();
     this.buttonRef = null;
     this.setButtonRef = (element) => {
@@ -26,9 +27,12 @@ class TabBarComponent extends Component<Props, State> {
     };
   }
 
+  componentDidMount() {
+    this.forceUpdate();
+  }
+
   handleClick(i: number) {
-    this.setState({ selectedTab: i + 1 });
-    console.log(this.buttonWidth);
+    this.setState({ selectedTab: i });
   }
 
   render() {
@@ -44,7 +48,7 @@ class TabBarComponent extends Component<Props, State> {
             </Styles.TabButton>
           ))}
         </Styles.TabBar>
-        <Styles.TabSlider />
+        <Styles.TabSlider buttonW={this.buttonWidth} selected={this.state.selectedTab} />
         <Styles.TabContentContainer showChild={this.state.selectedTab}>
           {this.props.children}
         </Styles.TabContentContainer>
