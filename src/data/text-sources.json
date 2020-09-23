@@ -1,0 +1,52 @@
+{
+  "HomeView": [
+    {
+      "content": "About me",
+      "index": 0,
+      "type": "heading"
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed tortor dui. Vestibulum accumsan eget risus nec dignissim. Nulla facilisi. Quisque finibus semper malesuada. Etiam vel magna iaculis, facilisis lectus in, aliquam quam. Donec id elementum dui. Nulla ultrices, nulla eget sagittis consectetur, enim justo pharetra ante, ut pulvinar sapien sem in dui. Pellentesque ligula mi, pellentesque eget gravida et, vulputate id nulla. Morbi feugiat blandit malesuada.",
+      "index": 1,
+      "type": "prose"
+    },
+    {
+      "content": "Cras vel molestie mi. Mauris egestas accumsan est, vel vestibulum turpis. Integer mi ipsum, malesuada et dolor ut, sagittis congue diam. Mauris sit amet orci ligula. Sed hendrerit velit vel lorem faucibus, non feugiat leo porta. Curabitur imperdiet suscipit lobortis. Suspendisse ac massa ac ipsum gravida viverra ac eu nisl. Nulla sed mollis mi. Nunc sed iaculis arcu. Praesent vitae feugiat felis. Sed vel lectus nec dolor elementum rhoncus sit amet sit amet nibh. Nunc sodales fringilla quam non mollis.",
+      "index": 2,
+      "type": "prose"
+    },
+    {
+      "content": "Lacus sed viverra tellus in hac habitasse platea dictumst. Dui sapien eget mi proin sed. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Neque viverra justo nec ultrices. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Scelerisque eu ultrices vitae auctor eu augue ut. Rhoncus est pellentesque elit ullamcorper. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Et netus et malesuada fames ac turpis.",
+      "index": 3,
+      "type": "prose"
+    },
+    {
+      "content": "\"Nachts IST es kälter als draußen\"",
+      "index": 4,
+      "type": "quote"
+    }
+  ],
+  "AcademicsView": [
+    {
+      "content": "This is an AcademicsViewComponent",
+      "index": 0,
+      "type": "prose"
+    },
+    {
+      "content": "Tab #1",
+      "index": 1,
+      "type": "title"
+    },
+    {
+      "content": "Lacus sed viverra tellus in hac habitasse platea dictumst. Dui sapien eget mi proin sed. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Neque viverra justo nec ultrices. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Scelerisque eu ultrices vitae auctor eu augue ut. Rhoncus est pellentesque elit ullamcorper. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Et netus et malesuada fames ac turpis.",
+      "index": 2,
+      "type": "prose"
+    },
+    {
+      "content": "The other tab",
+      "index": 3,
+      "type": "title"
+    }
+  ],
+  "ProjectsView": []
+}
