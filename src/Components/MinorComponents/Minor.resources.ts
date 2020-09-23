@@ -81,8 +81,11 @@ export const AccordionStyles = {
 
 export const TabBarStyles = {
   TabContainer: styled.div``,
-  TabSlider: styled.div``,
   TabContentContainer: styled.div<{ showChild: number }>`
+    div:nth-child(n) {
+      display: none;
+    }
+
     div:nth-child(${(props) => props.showChild}) {
       display: flex;
     }
@@ -99,21 +102,28 @@ export const TabBarStyles = {
     align-items: flex-start;
     cursor: pointer;
     border-bottom: solid lightslategrey 0.15em;
-    transition: border-bottom 0.2s;
     padding: 0.5em 0.8em;
 
     &:active {
-      border-bottom: solid red 0.15em;
+      border-bottom: solid darkseagreen 0.15em;
     }
 
     &:first-child {
-      padding-left: 0.4em;
+      padding-left: 0.45em;
     }
 
     &:last-child {
       margin-right: 30%;
-      padding-right: 0.5em;
+      padding-right: 0.45em;
     }
+  `,
+
+  TabSlider: styled.div`
+    height: 0.26em;
+    background-color: darkslategrey;
+    width: 10em;
+    position: relative;
+    bottom: 2.26em;
   `,
 
   TabBar: styled(SharedStyles.Sleeve)`

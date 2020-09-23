@@ -80,7 +80,5 @@ export const SharedStyles = {
     height: ${(props) => (props.widthP != null ? '100%' : '25em')};
   `,
 
-  TabContent: styled.div`
-    display: none;
-  `,
+  TabContent: styled.div``,
 };
