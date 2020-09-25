@@ -80,10 +80,15 @@ export const AccordionStyles = {
 export const TabBarStyles = {
   TabContainer: styled.div`
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   `,
 
   TabContentContainer: styled.div<{ showChild: number }>`
-    div:nth-child(n) {
+    display: contents;
+
+    & > * {
       display: none;
     }
 
@@ -134,6 +139,7 @@ export const TabBarStyles = {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    margin: 0 0 ${Margin.medium} 3%;
+    margin: 0 0 ${Margin.medium};
+    padding-left: 6%;
   `,
 };
