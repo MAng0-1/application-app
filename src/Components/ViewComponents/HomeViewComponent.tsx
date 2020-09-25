@@ -4,7 +4,6 @@ import Cat01 from '../../data/images/image_1.jpg';
 import Cat02 from '../../data/images/image_2.jpg';
 import Cat03 from '../../data/images/image_3.jpg';
 import { HomeView as CurrentView } from '../../data/text-sources.json';
-import Topnav from '../MinorComponents/TopNavComponent';
 import { SharedStyles as Styles } from '../Shared.resources';
 
 type Props = {};
@@ -18,7 +17,6 @@ function getStoredText(index: number): string {
 const HomeViewComponent: FC<Props> = (props) => {
   return (
     <Styles.ContentContainer>
-      <Topnav />
       <Styles.TextCard.Heading>{getStoredText(0)}</Styles.TextCard.Heading>
 
       <Styles.Sleeve>

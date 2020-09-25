@@ -28,11 +28,11 @@ class TabBarComponent extends Component<Props, State> {
   }
 
   componentDidMount() {
-    this.forceUpdate();
+    this.setState({ selectedTab: 1 });
   }
 
   handleClick(i: number) {
-    this.setState({ selectedTab: i });
+    this.setState({ selectedTab: i + 1 });
   }
 
   render() {
@@ -47,8 +47,8 @@ class TabBarComponent extends Component<Props, State> {
               {title}
             </Styles.TabButton>
           ))}
+          <Styles.TabSlider buttonW={this.buttonWidth} selected={this.state.selectedTab} />
         </Styles.TabBar>
-        <Styles.TabSlider buttonW={this.buttonWidth} selected={this.state.selectedTab} />
         <Styles.TabContentContainer showChild={this.state.selectedTab}>
           {this.props.children}
         </Styles.TabContentContainer>
