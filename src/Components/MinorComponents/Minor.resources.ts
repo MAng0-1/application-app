@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Font, Margin, SharedStyles } from '../Shared.resources';
 
 export const TopNavStyles = {
-  Container: styled.div`
+  TopNavContainer: styled.div`
     height: 2em;
     background-color: slategrey;
     padding: 0.5em 0 0;
@@ -57,7 +57,7 @@ export const AccordionStyles = {
       transition: max-height 0.25s ease-in-out, padding 0.2s ease-in-out, margin 0.2s ease-in-out;
     }
   `,
-  Container: styled.div`
+  AccordionContainer: styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,9 +67,7 @@ export const AccordionStyles = {
   SvgContainer: styled.div`
     height: 100%;
     width: 4em;
-    transition: transform 0.2s;
-
-    &.is-panel-open {
+    transition: transform 0.2s &.is-panel-open {
       transform: rotate(90deg);
     }
   `,
@@ -80,7 +78,10 @@ export const AccordionStyles = {
 };
 
 export const TabBarStyles = {
-  TabContainer: styled.div``,
+  TabContainer: styled.div`
+    width: 100%;
+  `,
+
   TabContentContainer: styled.div<{ showChild: number }>`
     div:nth-child(n) {
       display: none;
@@ -99,7 +100,6 @@ export const TabBarStyles = {
     color: darkslategrey;
     display: inline-block;
     text-align: center;
-    align-items: flex-start;
     cursor: pointer;
     border-bottom: solid lightslategrey 0.15em;
     padding: 0.5em 0.8em;
@@ -119,10 +119,11 @@ export const TabBarStyles = {
     background-color: darkslategrey;
     width: ${(p) => p.buttonW[p.selected]}px;
     position: relative;
-    bottom: 2.26em;
+    align-self: flex-end;
+
     left: ${(p) => {
       let val: number = 0;
-      for (let i: number = 0; i < p.selected; i++) val = val + p.buttonW[i];
+      for (let i: number = p.buttonW.length - 1; i >= p.selected; i--) val = val - p.buttonW[i];
       return val;
     }}px;
 
@@ -133,6 +134,6 @@ export const TabBarStyles = {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    margin: 0 0 ${Margin.medium};
+    margin: 0 0 ${Margin.medium} 3%;
   `,
 };

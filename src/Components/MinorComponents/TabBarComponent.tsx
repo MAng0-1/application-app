@@ -47,8 +47,8 @@ class TabBarComponent extends Component<Props, State> {
               {title}
             </Styles.TabButton>
           ))}
+          <Styles.TabSlider buttonW={this.buttonWidth} selected={this.state.selectedTab} />
         </Styles.TabBar>
-        <Styles.TabSlider buttonW={this.buttonWidth} selected={this.state.selectedTab} />
         <Styles.TabContentContainer showChild={this.state.selectedTab}>
           {this.props.children}
         </Styles.TabContentContainer>

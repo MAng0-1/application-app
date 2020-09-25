@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import Accordion from '../MinorComponents/AccordionComponent';
 import TabBar from '../MinorComponents/TabBarComponent';
 import Topnav from '../MinorComponents/TopNavComponent';
 import { SharedStyles as Styles } from '../Shared.resources';
@@ -10,10 +11,11 @@ const ProjectsViewComponent: FC<Props> = () => {
     <Styles.ContentContainer>
       <Topnav />
       <TabBar titles={['Centigrade', 'Company2', 'Company3']}>
-        <Styles.TabContent> aaaaaaaaaaaaaa </Styles.TabContent>
-        <Styles.TabContent> bbbbbbbbbbbbbb </Styles.TabContent>
-        <Styles.TabContent> cccccccccccccc </Styles.TabContent>
+        <Styles.Sleeve>
+          <Styles.TextCard.Prose> aaaaaaaaaaaaaaaaa </Styles.TextCard.Prose>
+        </Styles.Sleeve>
       </TabBar>
+      <Accordion title='bla' />
     </Styles.ContentContainer>
   );
 };

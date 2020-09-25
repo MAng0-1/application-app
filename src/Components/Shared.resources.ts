@@ -6,8 +6,6 @@ export const Margin = {
   large: '5rem',
 };
 
-export const a = {};
-
 export const Font = {
   standard:
     '400 1em -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "sans-serif"',
@@ -55,7 +53,7 @@ export const SharedStyles = {
     Prose: styled.div`
       text-align: justify;
       font: ${Font.medium};
-      padding: 1em 2em;
+      padding: 1em 2%;
       width: 90%;
       background-color: white;
       display: flex;
@@ -81,6 +79,4 @@ export const SharedStyles = {
     width: ${(props) => (props.widthP != null ? '100%' : 'auto')};
     height: ${(props) => (props.widthP != null ? '100%' : '25em')};
   `,
-
-  TabContent: styled.div``,
 };

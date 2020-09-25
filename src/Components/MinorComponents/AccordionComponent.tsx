@@ -19,7 +19,7 @@ class AccordionComponent extends Component<Props, State> {
 
   handleClick(): boolean | undefined {
     //to accomodate measuring the panel in componentDidMount, the transition property is introduced via the first click
-    if (this.state.isTransitionActive == false) {
+    if (this.state.isTransitionActive === false) {
       this.setState({
         isTransitionActive: this.panelRef.current?.classList.toggle('with-transition'),
       });
@@ -37,7 +37,7 @@ class AccordionComponent extends Component<Props, State> {
 
   render() {
     return (
-      <Styles.Container>
+      <Styles.AccordionContainer>
         <Styles.Handle onClick={this.handleClick}>
           <Styles.SvgContainer ref={this.iconRef}>
             <Styles.SvgFit>
@@ -50,7 +50,7 @@ class AccordionComponent extends Component<Props, State> {
           {' '}
           {this.props.children}
         </Styles.Panel>
-      </Styles.Container>
+      </Styles.AccordionContainer>
     );
   }
 }
