@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import Topnav from '../MinorComponents/TopNavComponent';
-import { SharedStyles as Styles } from '../Shared.resources';
+import { SharedStyles as Styles } from '../shared.resources';
 
 type Props = {};
 
