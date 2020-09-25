@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { Font, Margin, SharedStyles } from '../shared.resources';
+import { Font, Margin, SharedStyles } from '../Shared.resources';
 
 export const TopNavStyles = {
   Container: styled.div`
