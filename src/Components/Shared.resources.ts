@@ -6,6 +6,8 @@ export const Margin = {
   large: '5rem',
 };
 
+export const a = {};
+
 export const Font = {
   standard:
     '400 1em -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "sans-serif"',
