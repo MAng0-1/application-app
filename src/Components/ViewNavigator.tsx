@@ -1,33 +1,18 @@
-import React, { Component } from 'react';
+import React, { FC } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import TopNavComponent from './MinorComponents/TopNavComponent';
 import AboutViewComponent from './ViewComponents/AboutViewComponent';
 import AcademicsViewComponent from './ViewComponents/AcademicsViewComponent';
 import GalleryViewComponent from './ViewComponents/GalleryViewComponent';
 import HomeViewComponent from './ViewComponents/HomeViewComponent';
 import ProjectsViewComponent from './ViewComponents/ProjectsViewComponent';
 
-type State = {
-  contentIterator: number;
-};
+type Props = {};
 
-class ViewNavigator extends Component<{}, State> {
-  constructor(props: any) {
-    super(props);
-    this.state = {
-      contentIterator: 0,
-    };
-    this.iterate = this.iterate.bind(this);
-  }
-
-  //returns an index for displaying the correct content on the subsites
-  iterate(length: number) {
-    let currentIndex = this.state.contentIterator;
-    this.setState({ contentIterator: (this.state.contentIterator + 1) % length });
-    return currentIndex;
-  }
-
-  render() {
-    return (
+const ViewNavigator: FC<Props> = () => {
+  return (
+    <div>
+      <TopNavComponent />
       <Switch>
         <Route exact path='/' component={HomeViewComponent} />
         <Route exact path='/academics' component={AcademicsViewComponent} />
@@ -35,8 +20,8 @@ class ViewNavigator extends Component<{}, State> {
         <Route exact path='/gallery' component={GalleryViewComponent} />
         <Route exact path='/about' component={AboutViewComponent} />
       </Switch>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default ViewNavigator;
