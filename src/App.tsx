@@ -4,7 +4,7 @@ import ViewNavigator from './Components/ViewNavigator';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/'>
       <ViewNavigator></ViewNavigator>
     </Router>
   );
