@@ -3,13 +3,18 @@ import styled from 'styled-components';
 import { Font, Margin, SharedStyles } from '../Shared.resources';
 
 export const TopNavStyles = {
-  TopNavContainer: styled.div`
+  TopNavContainer: styled.div<{ selectedPage: number }>`
     height: 2em;
     background-color: slategrey;
     padding: 0.5em 0 0;
     width: 100%;
     margin-bottom: ${Margin.medium};
     display: block;
+
+    & > :nth-child(${(p) => p.selectedPage}) {
+      background-color: white;
+      color: black;
+    }
   `,
 
   NavButton: styled(Link)`
@@ -96,12 +101,12 @@ export const TabBarStyles = {
       display: none;
     }
 
-    div:nth-child(${(props) => props.showChild + 1}) {
+    & > div:nth-child(${(p) => (p.showChild > 0 ? p.showChild : 'n')}) {
       display: flex;
     }
   `,
 
-  TabButton: styled.div<{ position?: number }>`
+  TabButton: styled.div`
     height: 1.25em;
     font: ${Font.mediumlarge};
     appearance: button;
@@ -126,13 +131,13 @@ export const TabBarStyles = {
   TabSlider: styled.div<{ buttonW: number[]; selected: number }>`
     height: 0.26em;
     background-color: darkslategrey;
-    width: ${(p) => p.buttonW[p.selected]}px;
+    width: ${(p) => p.buttonW[p.selected - 1]}px;
     position: relative;
     align-self: flex-end;
 
     left: ${(p) => {
       let val: number = 0;
-      for (let i: number = p.buttonW.length - 1; i >= p.selected; i--) val = val - p.buttonW[i];
+      for (let i: number = p.buttonW.length - 1; i >= p.selected - 1; i--) val = val - p.buttonW[i];
       return val;
     }}px;
 
@@ -140,10 +145,9 @@ export const TabBarStyles = {
   `,
 
   TabBar: styled(SharedStyles.Sleeve)`
-    width: 100%;
     display: flex;
+    width: 97%;
     justify-content: flex-start;
-    margin: 0 0 ${Margin.medium};
-    padding-left: 6%;
+    margin: 0 0 ${Margin.medium} 3%;
   `,
 };

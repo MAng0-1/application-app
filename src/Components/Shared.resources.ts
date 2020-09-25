@@ -39,7 +39,7 @@ export const SharedStyles = {
     max-height 25em;
     display: flex;
     justify-content: center;
-    margin: ${Margin.medium} 0 ${Margin.medium};
+    margin: 0 0 ${Margin.medium};
   `,
 
   TextCard: {

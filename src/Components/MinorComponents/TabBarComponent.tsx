@@ -28,11 +28,11 @@ class TabBarComponent extends Component<Props, State> {
   }
 
   componentDidMount() {
-    this.forceUpdate();
+    this.setState({ selectedTab: 1 });
   }
 
   handleClick(i: number) {
-    this.setState({ selectedTab: i });
+    this.setState({ selectedTab: i + 1 });
   }
 
   render() {
