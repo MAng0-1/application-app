@@ -46,6 +46,9 @@ export const AccordionStyles = {
   Panel: styled.div<{ ph: number }>`
     background-color: white;
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-height: 0;
     overflow: hidden;
     margin-bottom: 0;
@@ -67,7 +70,8 @@ export const AccordionStyles = {
   SvgContainer: styled.div`
     height: 100%;
     width: 4em;
-    transition: transform 0.2s &.is-panel-open {
+    transition: transform 0.2s;
+    &.is-panel-open {
       transform: rotate(90deg);
     }
   `,

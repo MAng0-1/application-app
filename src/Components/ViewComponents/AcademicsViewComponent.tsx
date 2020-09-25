@@ -25,6 +25,7 @@ const AcademicsViewComponent: FC<Props> = () => {
         <Styles.Sleeve>
           <Styles.TextCard.Prose>{getStoredText(2)}</Styles.TextCard.Prose>
         </Styles.Sleeve>
+        <Accordion title={'stacked af'}> Yes </Accordion>
       </Accordion>
 
       <Accordion title={getStoredText(3)}>
