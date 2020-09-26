@@ -24,12 +24,14 @@ class AccordionComponent extends Component<Props, State> {
         isTransitionActive: this.panelRef.current?.classList.toggle('with-transition'),
       });
     }
+    //eslint-disable-next-line
     const icon = this.iconRef.current?.classList.toggle('is-panel-open');
     return this.panelRef.current?.classList.toggle('is-panel-open');
   }
 
   componentDidMount() {
     if (this.panelRef.current != null) {
+      //eslint-disable-next-line
       const a = this.panelRef.current?.classList.toggle('is-panel-open');
       this.setState({ panelHeight: this.panelRef.current.clientHeight });
     }

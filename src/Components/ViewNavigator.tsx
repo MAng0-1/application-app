@@ -9,16 +9,49 @@ import ProjectsViewComponent from './ViewComponents/ProjectsViewComponent';
 
 type Props = {};
 
-const ViewNavigator: FC<Props> = () => {
+function getStoredText(
+  CurrentView: {
+    content: string;
+    index: number;
+    type: string;
+  }[],
+  index: number,
+): string {
+  return index === CurrentView[index].index
+    ? CurrentView[index].content
+    : 'Err: Specified Content does not match location of stored data';
+}
+
+const ViewNavigator: FC<Props> = (props) => {
   return (
     <div>
       <TopNavComponent />
       <Switch>
-        <Route exact path='/' component={HomeViewComponent} />
-        <Route exact path='/academics' component={AcademicsViewComponent} />
-        <Route exact path='/projects' component={ProjectsViewComponent} />
-        <Route exact path='/gallery' component={GalleryViewComponent} />
-        <Route exact path='/about' component={AboutViewComponent} />
+        <Route
+          exact
+          path='/'
+          render={(props) => <HomeViewComponent {...props} Text={getStoredText} />}
+        />
+        <Route
+          exact
+          path='/academics'
+          render={(props) => <AcademicsViewComponent {...props} Text={getStoredText} />}
+        />
+        <Route
+          exact
+          path='/projects'
+          render={(props) => <ProjectsViewComponent {...props} Text={getStoredText} />}
+        />
+        <Route
+          exact
+          path='/gallery'
+          render={(props) => <GalleryViewComponent {...props} Text={getStoredText} />}
+        />
+        <Route
+          exact
+          path='/about'
+          render={(props) => <AboutViewComponent {...props} Text={getStoredText} />}
+        />
       </Switch>
     </div>
   );

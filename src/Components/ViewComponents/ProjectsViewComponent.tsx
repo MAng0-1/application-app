@@ -3,7 +3,16 @@ import Accordion from '../MinorComponents/AccordionComponent';
 import TabBar from '../MinorComponents/TabBarComponent';
 import { SharedStyles as Styles } from '../Shared.resources';
 
-type Props = {};
+type Props = {
+  Text: (
+    CurrentView: {
+      content: string;
+      index: number;
+      type: string;
+    }[],
+    index: number,
+  ) => string;
+};
 
 const ProjectsViewComponent: FC<Props> = (props) => {
   return (

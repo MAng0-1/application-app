@@ -4,7 +4,16 @@ import { AcademicsView as CurrentView } from '../../data/text-sources.json';
 import Accordion from '../MinorComponents/AccordionComponent';
 import { SharedStyles as Styles } from '../Shared.resources';
 
-type Props = {};
+type Props = {
+  Text: (
+    CurrentView: {
+      content: string;
+      index: number;
+      type: string;
+    }[],
+    index: number,
+  ) => string;
+};
 
 function getStoredText(index: number): string {
   return index === CurrentView[index].index
