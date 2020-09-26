@@ -19,36 +19,37 @@ type Props = {
 };
 
 const HomeViewComponent: FC<Props> = (props) => {
+  const Text = props.Text;
   return (
     <Styles.ContentContainer>
-      <Styles.TextCard.Heading>{props.Text(HomeView, 0)}</Styles.TextCard.Heading>
+      <Styles.TextCard.Heading>{Text(HomeView, 0)}</Styles.TextCard.Heading>
 
       <Styles.Sleeve>
-        <Styles.TextCard.Prose>{props.Text(HomeView, 1)}</Styles.TextCard.Prose>
+        <Styles.TextCard.Prose>{Text(HomeView, 1)}</Styles.TextCard.Prose>
       </Styles.Sleeve>
 
       <Styles.Sleeve>
-        <Styles.TextCard.Prose>{props.Text(HomeView, 2)}</Styles.TextCard.Prose>
+        <Styles.TextCard.Prose>{Text(HomeView, 2)}</Styles.TextCard.Prose>
         <Styles.ImageCard src={Cat01} alt='cute cat' />
       </Styles.Sleeve>
 
       <Styles.Sleeve>
         <Styles.ImageCard src={Cat02} alt='sleepy cat' />
-        <Styles.TextCard.Prose>{props.Text(HomeView, 3)}</Styles.TextCard.Prose>
+        <Styles.TextCard.Prose>{Text(HomeView, 3)}</Styles.TextCard.Prose>
       </Styles.Sleeve>
 
       <Styles.Sleeve>
-        <Styles.TextCard.Prose widthP={20}>{props.Text(HomeView, 4)}</Styles.TextCard.Prose>
+        <Styles.TextCard.Prose widthP={20}>{Text(HomeView, 4)}</Styles.TextCard.Prose>
 
         <TabBar titles={['A', 'B', 'C']}>
-          <Styles.TextCard.Prose>{props.Text(HomeView, 5)}</Styles.TextCard.Prose>
-          <Styles.TextCard.Prose>{props.Text(HomeView, 6)}</Styles.TextCard.Prose>
-          <Styles.TextCard.Prose>{props.Text(HomeView, 7)}</Styles.TextCard.Prose>
+          <Styles.TextCard.Prose>{Text(HomeView, 5)}</Styles.TextCard.Prose>
+          <Styles.TextCard.Prose>{Text(HomeView, 6)}</Styles.TextCard.Prose>
+          <Styles.TextCard.Prose>{Text(HomeView, 7)}</Styles.TextCard.Prose>
         </TabBar>
       </Styles.Sleeve>
       <Styles.Sleeve></Styles.Sleeve>
       <Styles.Sleeve>
-        <Styles.TextCard.Quote>{props.Text(HomeView, 8)}</Styles.TextCard.Quote>
+        <Styles.TextCard.Quote>{Text(HomeView, 8)}</Styles.TextCard.Quote>
       </Styles.Sleeve>
 
       <Styles.Sleeve>

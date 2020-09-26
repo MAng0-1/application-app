@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import Cat03 from '../../data/images/image_3.jpg';
-import { AcademicsView as CurrentView } from '../../data/text-sources.json';
+import { AcademicsView } from '../../data/text-sources.json';
 import Accordion from '../MinorComponents/AccordionComponent';
 import { SharedStyles as Styles } from '../Shared.resources';
 
@@ -15,29 +15,24 @@ type Props = {
   ) => string;
 };
 
-function getStoredText(index: number): string {
-  return index === CurrentView[index].index
-    ? CurrentView[index].content
-    : 'Err: Specified Content does not match location of stored data';
-}
-
 const AcademicsViewComponent: FC<Props> = (props) => {
+  const Text = props.Text;
   return (
     <Styles.ContentContainer>
-      <Styles.TextCard.Heading>AcademicsView</Styles.TextCard.Heading>
+      <Styles.TextCard.Heading>{Text(AcademicsView, 0)}</Styles.TextCard.Heading>
       <Styles.Sleeve>
-        <Styles.TextCard.Prose>{getStoredText(0)}</Styles.TextCard.Prose>
+        <Styles.TextCard.Prose>{Text(AcademicsView, 1)}</Styles.TextCard.Prose>
       </Styles.Sleeve>
-      <Accordion title={getStoredText(1)}>
+      <Accordion title={Text(AcademicsView, 2)}>
         <Styles.Sleeve>
-          <Styles.TextCard.Prose>{getStoredText(2)}</Styles.TextCard.Prose>
+          <Styles.TextCard.Prose>{Text(AcademicsView, 3)}</Styles.TextCard.Prose>
         </Styles.Sleeve>
         <Accordion title={'stacked af'}> Yes </Accordion>
       </Accordion>
 
-      <Accordion title={getStoredText(3)}>
+      <Accordion title={Text(AcademicsView, 4)}>
         <Styles.Sleeve>
-          <Styles.TextCard.Prose>{getStoredText(2)}</Styles.TextCard.Prose>
+          <Styles.TextCard.Prose>{Text(AcademicsView, 5)}</Styles.TextCard.Prose>
           <Styles.ImageCard src={Cat03} alt='sleepy kitty' widthP={40} />
         </Styles.Sleeve>
       </Accordion>
