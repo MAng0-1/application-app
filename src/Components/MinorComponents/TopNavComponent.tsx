@@ -1,10 +1,31 @@
 import React, { FC, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { TopNavStyles as Styles } from './Minor.resources';
 
 type Props = {};
 
+function mapLocation(pathname: string): number {
+  switch (pathname) {
+    case '/academics':
+      return 2;
+
+    case '/projects':
+      return 3;
+
+    case '/gallery':
+      return 4;
+
+    case '/about':
+      return 5;
+
+    default:
+      return 1;
+  }
+}
+
 const TopNavComponent: FC<Props> = () => {
-  const [page, setPage] = useState(1);
+  const location = useLocation();
+  const [page, setPage] = useState(mapLocation(location.pathname));
   return (
     <Styles.TopNavContainer selectedPage={page}>
       <Styles.NavButton onClick={() => setPage(1)} to='/'>

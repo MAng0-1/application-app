@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Margin = {
   small: '1rem',
-  medium: '2rem',
+  medium: '3rem',
   large: '5rem',
 };
 
@@ -20,6 +20,7 @@ export const Font = {
 export const SharedStyles = {
   ContentContainer: styled.div`
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
 
@@ -28,16 +29,11 @@ export const SharedStyles = {
     }
   `,
 
-  VerticalSplit: styled.div`
-    display: flex;
-    width: 100%;
-    height: 100%;
-  `,
-
-  Sleeve: styled.div`
+  Sleeve: styled.div<{ vertical?: boolean }>`
     width: 100%;
     max-height 25em;
     display: flex;
+    flex-direction: ${(p) => (p.vertical ? 'column' : 'row')};
     justify-content: center;
     margin: 0 0 ${Margin.medium};
   `,
@@ -47,14 +43,14 @@ export const SharedStyles = {
       text-decoration: underline double;
       font: ${Font.large};
       text-align: center;
-      margin: ${Margin.medium} ${Margin.small} ${Margin.large};
+      margin: ${Margin.small} ${Margin.small} ${Margin.large};
       width: auto;
     `,
-    Prose: styled.div`
+    Prose: styled.div<{ widthP?: number }>`
       text-align: justify;
       font: ${Font.medium};
       padding: 1em 2%;
-      width: 90%;
+      width: ${(p) => p.widthP ?? 90}%;
       background-color: white;
       display: flex;
       align-items: center;

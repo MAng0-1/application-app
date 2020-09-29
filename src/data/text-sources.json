@@ -1,52 +1,150 @@
 {
   "HomeView": [
     {
-      "content": "About me",
+      "content": "Über mich",
       "index": 0,
       "type": "heading"
     },
     {
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed tortor dui. Vestibulum accumsan eget risus nec dignissim. Nulla facilisi. Quisque finibus semper malesuada. Etiam vel magna iaculis, facilisis lectus in, aliquam quam. Donec id elementum dui. Nulla ultrices, nulla eget sagittis consectetur, enim justo pharetra ante, ut pulvinar sapien sem in dui. Pellentesque ligula mi, pellentesque eget gravida et, vulputate id nulla. Morbi feugiat blandit malesuada.",
+      "content": "Mein Name ist Michael Angerer und ich bin 20 Jahre alt. Ich komme aus Julbach im südöstlichen Niederbayern, an der Grenze zu Österreich, wo Inn und Salzach zusammenfließen. Derzeit bin ich dualer Student in Ingolstadt und studiere Informatik, bin allerdings sowohl für Unterricht als auch Arbeit derzeit zuhause. Wegen der Gründe, die ich bereits im Bewerbungsschreiben angegeben habe, möchte ich mich bei Ihnen bewerben.",
       "index": 1,
       "type": "prose"
     },
     {
-      "content": "Cras vel molestie mi. Mauris egestas accumsan est, vel vestibulum turpis. Integer mi ipsum, malesuada et dolor ut, sagittis congue diam. Mauris sit amet orci ligula. Sed hendrerit velit vel lorem faucibus, non feugiat leo porta. Curabitur imperdiet suscipit lobortis. Suspendisse ac massa ac ipsum gravida viverra ac eu nisl. Nulla sed mollis mi. Nunc sed iaculis arcu. Praesent vitae feugiat felis. Sed vel lectus nec dolor elementum rhoncus sit amet sit amet nibh. Nunc sodales fringilla quam non mollis.",
+      "content": "Meine Bindung zu Computern besteht schon von klein auf. Seit ich denken kann, hatten wir einen PC daheim stehen, an dem ich auch oft mit meinem Bruder zusammen gespielt oder ihm zugeschaut habe. Diese Bindung hat sich dann noch verstärkt, als ich mit ~10 Jahren erstmals Zugang zum Internet hatte. Die Kombination aus Video-Streams, Videospielen und genereller Internet- und Forenkultur prägt und interessiert mich auch noch bis zum heutigen Tag",
       "index": 2,
       "type": "prose"
     },
     {
-      "content": "Lacus sed viverra tellus in hac habitasse platea dictumst. Dui sapien eget mi proin sed. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Neque viverra justo nec ultrices. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Scelerisque eu ultrices vitae auctor eu augue ut. Rhoncus est pellentesque elit ullamcorper. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Et netus et malesuada fames ac turpis.",
+      "content": "Programmieren selbst war mir auch schon immer im Hinterkopf, wenn ich es auch nie wirklich als Hobby angesehen habe. Mir war schlicht und ergreifend die Einstiegsbarriere zu groß, vor allem ohne wirklichen 'Startpunkt' oder 'Lehrer' und einer unüberblickbaren Masse an Information im Internet. Deswegen hat auch der Informatik-Unterricht am Gymnasium mein Interesse in diese Richtung erstmals geweckt, auch wenn wir damals eher theoretisches Wissen vermittelt bekommen haben. Erst im Studium selbst habe ich durch die Praktika und Praxisphasen im Betrieb sowohl eine Umgebung von erfahrenen Programmierern, als auch einen graduellen aber tiefgreifenden und umfassenden Einstieg in die Informatik erleben dürfen.",
       "index": 3,
       "type": "prose"
     },
     {
-      "content": "\"Nachts IST es kälter als draußen\"",
+      "content": "Was mir am Programmieren am meisten gefällt, ist:",
       "index": 4,
+      "type": "prose"
+    },
+    {
+      "content": "Die spielerische Puzzle-artigkeit des Codes. Man kann Code an allen Ecken und Enden verbessern um ihn schneller, leistungsfähiger, einfacher, lesbarer, etc. zu machen. Einen sauber strukturierten und möglichst simplen Code zu erreichen, der aber trotzdem modular benutzbar ist, ist eine Herausforderung, die eigentlich immer nach oben offen ist und immer motiviert, noch irgendwo anders zu schrauben.",
+      "index": 5,
+      "type": "prose"
+    },
+    {
+      "content": "Dass stets etwas neues zu lernen ist. Coding ist eigentlich vom Fähigkeits-Anspruch immer nach oben offen. Man kann zwar heutzutage libraries von überall anders einbinden und sich so die Arbeit leichter machen, um aber genau die Funktionalität zu erreichen, die man haben will, ist es oft effizienter, diese selbst zu bauen. Dieses Prinzip zieht sich dann von Frameworks über Sprachen bis hin zu Betriebssystemen. Es gibt also immer etwas zu lernen, wodurch man seinen Code noch effizienter gestalten kann.",
+      "index": 6,
+      "type": "prose"
+    },
+    {
+      "content": "Die Open-Source-Mentalität. Als (manchmal zu) sparsamer Mensch gefällt mir das Prinzip von Open-Source und generell der Offenheit, die im Bereich Engineering herrscht sehr. In Zeiten, in denen bestehende Urheberrechts-Strukturen trotz globaler Vernetzung auch im Internet durchgesetzt werden sollen, ist Open-Source eine erfrischende Denkweise.",
+      "index": 7,
+      "type": "prose"
+    },
+    {
+      "content": "\"Man muss nicht alles wissen. Man muss nur wissen, wo man nachschauen kann\"",
+      "index": 8,
       "type": "quote"
     }
   ],
   "AcademicsView": [
     {
-      "content": "This is an AcademicsViewComponent",
+      "content": "Akademisches",
       "index": 0,
-      "type": "prose"
+      "type": "heading"
     },
     {
-      "content": "Tab #1",
+      "content": "Auf dieser Seite möchte ich in kurzen Worten meinen akademischen Werdegang darlegen und beschreiben.",
       "index": 1,
-      "type": "title"
-    },
-    {
-      "content": "Lacus sed viverra tellus in hac habitasse platea dictumst. Dui sapien eget mi proin sed. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Neque viverra justo nec ultrices. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Scelerisque eu ultrices vitae auctor eu augue ut. Rhoncus est pellentesque elit ullamcorper. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Et netus et malesuada fames ac turpis.",
-      "index": 2,
       "type": "prose"
     },
     {
-      "content": "The other tab",
-      "index": 3,
+      "content": "Tassilo-Gymnasium Simbach am Inn",
+      "index": 2,
       "type": "title"
+    },
+    {
+      "content": "Nach der Grundschule wurde das Tassilo-Gymnasium im Nachbarort Simbach zu meiner weiterführenden Schule. Die 8 Jahre (G8) Schulzeit dort, später im technischen Zweig, beschloss ich mit einem Abiturschnitt von 1,7. Lieblingsfächer kann ich rückblickend nicht angeben, da diese zu sehr von der Lehrkraft abgehangen haben. Außerhalb der Pflichtfächer beteiligte ich in den späteren Jahren immer gerne am Schulchor des Gymnasiums.",
+      "index": 3,
+      "type": "prose"
+    },
+    {
+      "content": "Technische Hochschule Ingolstadt",
+      "index": 4,
+      "type": "title"
+    },
+    {
+      "content": "Nach dem Abitur und meinem FÖJ habe ich an der THI eine Fachhochschule gefunden, an der ich mich wohlfühle. Wenn auch ich erst ein Semester darin verbringen durfte, da bereits mein zweites Semester aufgrund von coronabedingten Abstandsregulationen online durchgeführt wurde. Die ersten beiden Semester habe ich mit einem Schnitt von jeweils 2,14 und 2,12 komplett abgeschlossen und habe auch weiterhin das Ziel, den Bachelor in der Regelstudienzeit (7 Semester) zu erreichen. Im ersten Semester habe ich mich zusätzlich an einer neu gegründeten THI-Bigband als Posaunist beteiligt.",
+      "index": 5,
+      "type": "prose"
     }
   ],
-  "ProjectsView": []
+  "ProjectsView": [
+    {
+      "content": "Centigrade",
+      "index": 0,
+      "type": "tab"
+    },
+    {
+      "content": "Placeholder #1",
+      "index": 1,
+      "type": "tab"
+    },
+    {
+      "content": "Placeholder #2",
+      "index": 2,
+      "type": "tab"
+    },
+    {
+      "content": "Arduino Punchclock",
+      "index": 3,
+      "type": "title"
+    },
+    {
+      "content": "Die Arduino-Stechuhr ist mein erstes Code-Projekt überhaupt. Ein grober Überblick über die Funktionsweise des Codes und des Geräts: Der Arduino ist über einen Wifi-Chip auf einen MQTT-Broker subscribed. Immer wenn ein Chip oder eine Karte über den RFID-Scanner gehalten wird, wird die erkannte ID auf diesen MQTT-Server geschickt. Dort holt das Backend (im Falle Centigrade: Embrace), welches auch auf den Broker subscribed ist, die ID ab, sucht das Personal-Äquivalent, trägt es zusammen mit der Zeit ein und schickt eine Success- oder Error-Antwort. Diese erreicht dann den User durch (statusabhängiges) Feedback per Bildschirm und Buzzer auf dem Arduino. ('Guten Morgen', 'Auf wiedersehen', 'Mahlzeit!', etc.)",
+      "index": 4,
+      "type": "prose"
+    },
+    {
+      "content": "Verwendete Bestandteile: Arduino Uno, LCD-Display, RFID-Reader, ESP-Wifi-Modul, Buzzer, Schaltbauteile.",
+      "index": 5,
+      "type": "prose"
+    },
+    {
+      "content": "Verwendete Technologie: Arduino IDE ",
+      "index": 6,
+      "type": "prose"
+    },
+    {
+      "content": "Egogramm App",
+      "index": 7,
+      "type": "title"
+    },
+    {
+      "content": "Die Egogramm-App ist eine für mobile Geräte entwickelte Progressive Web App, die anhand des Riemann-Thomann-Modells erarbeitet, wie sich die Verhaltensweisen eines Menschen auf seine Kommunikation im Arbeitsumfeld auswirken. Das Projekt war zudem das erste Kundenprojekt an dem ich arbeiten durfte (wenn auch ohne Deadlines). Ein grober Überblick über die Funktionsweise des Codes: Nachdem der User durch eine Landing Page begrüßt wurde, werden ihm verschiedene Fragen gestellt, die er über ein Scroll-Menü mit Zahlen zwischen 1 und 15, je nach Grad der übereinstimmung beantworten muss. Nach den 36 Fragen wird dem User dann ein Diagramm mit 'Idealwerten' gezeigt, und welche Werte er erreicht hat. Die App soll nicht alleinstehend, sondern im Kontext eines Seminars zu diesem Thema vom Seminarleiter als Mittel genutzt werden.",
+      "index": 8,
+      "type": "prose"
+    },
+    {
+      "content": "Verwendete Technologie: Typescript/React",
+      "index": 9,
+      "type": "prose"
+    },
+    {
+      "content": "Projekte",
+      "index": 10,
+      "type": "heading"
+    }
+  ],
+  "AboutView": [
+    {
+      "content": "Über diese Website",
+      "index": 0,
+      "type": "heading"
+    },
+    {
+      "content": " Diese Website ist basiert auf React/Typescript, welches die Kombination ist, die ich bei Centigrade bisher gelernt habe. Architektur des Programms, sowie eingebundene funktionale Libraries sind aus der Egogramm-App übernommen. Allerdings habe ich versucht, möglichst auf Komponenten-Libraries zu verzichten. Alle Funktionalitäten auf dieser Website (bis auf das Routing) sind von mir selbst erstellt und benutzt (Topnav, Accordion, Tab-Bar). Die Seite soll einen 'anfassbaren' aktuellen Wissensstand vermitteln und als Arbeitsprobe dienen.",
+      "index": 1,
+      "type": "prose"
+    }
+  ]
 }

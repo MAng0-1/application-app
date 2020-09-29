@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import { AccordionStyles as Styles } from './Minor.resources';
 
-type Props = { title: string };
+type Props = {
+  title: string;
+};
 
-type State = { panelHeight: number; isTransitionActive: boolean | undefined };
+type State = {
+  panelHeight: number;
+  isTransitionActive: boolean | undefined;
+};
 
 class AccordionComponent extends Component<Props, State> {
   private panelRef: React.RefObject<HTMLDivElement>;
@@ -24,12 +29,14 @@ class AccordionComponent extends Component<Props, State> {
         isTransitionActive: this.panelRef.current?.classList.toggle('with-transition'),
       });
     }
+    //eslint-disable-next-line
     const icon = this.iconRef.current?.classList.toggle('is-panel-open');
     return this.panelRef.current?.classList.toggle('is-panel-open');
   }
 
   componentDidMount() {
     if (this.panelRef.current != null) {
+      //eslint-disable-next-line
       const a = this.panelRef.current?.classList.toggle('is-panel-open');
       this.setState({ panelHeight: this.panelRef.current.clientHeight });
     }
