@@ -47,10 +47,7 @@ const ProjectsViewComponent: FC<Props> = (props) => {
               />
               <Styles.ImageCard src={Schaltplan} alt={'Arduino Schaltplan'} />
             </Styles.Sleeve>
-            <a href={'https://github.com/Qkey01/arduino-punchclock'}>
-              {' '}
-              Link zum Github Repository{' '}
-            </a>
+            <a href={'https://github.com/Qkey01/arduino-punchclock'}>Zum Github Repository</a>
           </Accordion>
           <Accordion title={Text(CurrentView, 7)}>
             <Styles.Sleeve>

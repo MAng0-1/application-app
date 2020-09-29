@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Margin = {
   small: '1rem',
-  medium: '2rem',
+  medium: '3rem',
   large: '5rem',
 };
 
@@ -43,7 +43,7 @@ export const SharedStyles = {
       text-decoration: underline double;
       font: ${Font.large};
       text-align: center;
-      margin: ${Margin.medium} ${Margin.small} ${Margin.large};
+      margin: ${Margin.small} ${Margin.small} ${Margin.large};
       width: auto;
     `,
     Prose: styled.div<{ widthP?: number }>`
