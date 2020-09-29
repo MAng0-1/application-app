@@ -20,6 +20,7 @@ export const Font = {
 export const SharedStyles = {
   ContentContainer: styled.div`
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
 

@@ -75,8 +75,64 @@
     {
       "content": "Nach dem Abitur und meinem FÖJ habe ich an der THI eine Fachhochschule gefunden, an der ich mich wohlfühle. Wenn auch ich erst ein Semester darin verbringen durfte, da bereits mein zweites Semester aufgrund von coronabedingten Abstandsregulationen online durchgeführt wurde. Die ersten beiden Semester habe ich mit einem Schnitt von jeweils 2,14 und 2,12 komplett abgeschlossen und habe auch weiterhin das Ziel, den Bachelor in der Regelstudienzeit (7 Semester) zu erreichen. Im ersten Semester habe ich mich zusätzlich an einer neu gegründeten THI-Bigband als Posaunist beteiligt.",
       "index": 5,
-      "type": "title"
+      "type": "prose"
     }
   ],
-  "ProjectsView": []
+  "ProjectsView": [
+    {
+      "content": "Centigrade",
+      "index": 0,
+      "type": "tab"
+    },
+    {
+      "content": "Placeholder #1",
+      "index": 1,
+      "type": "tab"
+    },
+    {
+      "content": "Placeholder #2",
+      "index": 2,
+      "type": "tab"
+    },
+    {
+      "content": "Arduino Punchclock",
+      "index": 3,
+      "type": "title"
+    },
+    {
+      "content": "Die Arduino-Stechuhr ist mein erstes Code-Projekt überhaupt. Ein grober Überblick über die Funktionsweise des Codes und des Geräts: Der Arduino ist über einen Wifi-Chip auf einen MQTT-Broker subscribed. Immer wenn ein Chip oder eine Karte über den RFID-Scanner gehalten wird, wird die erkannte ID auf diesen MQTT-Server geschickt. Dort holt das Backend (im Falle Centigrade: Embrace), welches auch auf den Broker subscribed ist, die ID ab, sucht das Personal-Äquivalent, trägt es zusammen mit der Zeit ein und schickt eine Success- oder Error-Antwort. Diese erreicht dann den User durch (statusabhängiges) Feedback per Bildschirm und Buzzer auf dem Arduino. ('Guten Morgen', 'Auf wiedersehen', 'Mahlzeit!', etc.)",
+      "index": 4,
+      "type": "prose"
+    },
+    {
+      "content": "Verwendete Bestandteile: Arduino Uno, LCD-Display, RFID-Reader, ESP-Wifi-Modul, Buzzer, Schaltbauteile.",
+      "index": 5,
+      "type": "prose"
+    },
+    {
+      "content": "Verwendete Technologie: Arduino IDE ",
+      "index": 6,
+      "type": "prose"
+    },
+    {
+      "content": "Egogramm App",
+      "index": 7,
+      "type": "title"
+    },
+    {
+      "content": "Die Egogramm-App ist eine für mobile Geräte entwickelte Progressive Web App, die anhand des Riemann-Thomann-Modells erarbeitet, wie sich die Verhaltensweisen eines Menschen auf seine Kommunikation im Arbeitsumfeld auswirken. Das Projekt war zudem das erste Kundenprojekt an dem ich arbeiten durfte (wenn auch ohne Deadlines). Ein grober Überblick über die Funktionsweise des Codes: Nachdem der User durch eine Landing Page begrüßt wurde, werden ihm verschiedene Fragen gestellt, die er über ein Scroll-Menü mit Zahlen zwischen 1 und 15, je nach Grad der übereinstimmung beantworten muss. Nach den 36 Fragen wird dem User dann ein Diagramm mit 'Idealwerten' gezeigt, und welche Werte er erreicht hat. Die App soll nicht alleinstehend, sondern im Kontext eines Seminars zu diesem Thema vom Seminarleiter als Mittel genutzt werden.",
+      "index": 8,
+      "type": "prose"
+    },
+    {
+      "content": "Verwendete Technologie: Typescript/React",
+      "index": 9,
+      "type": "prose"
+    },
+    {
+      "content": "Projekte",
+      "index": 10,
+      "type": "heading"
+    }
+  ]
 }

@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import { AccordionStyles as Styles } from './Minor.resources';
 
-type Props = { title: string };
+type Props = {
+  title: string;
+};
 
-type State = { panelHeight: number; isTransitionActive: boolean | undefined };
+type State = {
+  panelHeight: number;
+  isTransitionActive: boolean | undefined;
+};
 
 class AccordionComponent extends Component<Props, State> {
   private panelRef: React.RefObject<HTMLDivElement>;
