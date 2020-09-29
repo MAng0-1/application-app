@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
-import Cat03 from '../../data/images/image_3.jpg';
+import TGS from '../../data/images/TGS.jpg';
+import THI from '../../data/images/THI.jpg';
 import { AcademicsView } from '../../data/text-sources.json';
 import Accordion from '../MinorComponents/AccordionComponent';
 import { SharedStyles as Styles } from '../Shared.resources';
@@ -26,14 +27,14 @@ const AcademicsViewComponent: FC<Props> = (props) => {
       <Accordion title={Text(AcademicsView, 2)}>
         <Styles.Sleeve>
           <Styles.TextCard.Prose>{Text(AcademicsView, 3)}</Styles.TextCard.Prose>
+          <Styles.ImageCard src={TGS} alt='Tassilo-Gymnasium Simbach' widthP={40} />
         </Styles.Sleeve>
-        <Accordion title={'stacked af'}> Yes </Accordion>
       </Accordion>
 
       <Accordion title={Text(AcademicsView, 4)}>
         <Styles.Sleeve>
           <Styles.TextCard.Prose>{Text(AcademicsView, 5)}</Styles.TextCard.Prose>
-          <Styles.ImageCard src={Cat03} alt='sleepy kitty' widthP={40} />
+          <Styles.ImageCard src={THI} alt='Technische Hochschule Ingolstadt' widthP={40} />
         </Styles.Sleeve>
       </Accordion>
     </Styles.ContentContainer>

@@ -53,27 +53,27 @@
       "type": "heading"
     },
     {
-      "content": "This is an AcademicsViewComponent",
+      "content": "Auf dieser Seite möchte ich in kurzen Worten meinen akademischen Werdegang darlegen und beschreiben.",
       "index": 1,
       "type": "prose"
     },
     {
-      "content": "Tab #1",
+      "content": "Tassilo-Gymnasium Simbach am Inn",
       "index": 2,
       "type": "title"
     },
     {
-      "content": "Lacus sed viverra tellus in hac habitasse platea dictumst. Dui sapien eget mi proin sed. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Neque viverra justo nec ultrices. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Scelerisque eu ultrices vitae auctor eu augue ut. Rhoncus est pellentesque elit ullamcorper. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Et netus et malesuada fames ac turpis.",
+      "content": "Nach der Grundschule wurde das Tassilo-Gymnasium im Nachbarort Simbach zu meiner weiterführenden Schule. Die 8 Jahre (G8) Schulzeit dort, später im technischen Zweig, beschloss ich mit einem Abiturschnitt von 1,7. Lieblingsfächer kann ich rückblickend nicht angeben, da diese zu sehr von der Lehrkraft abgehangen haben. Außerhalb der Pflichtfächer beteiligte ich in den späteren Jahren immer gerne am Schulchor des Gymnasiums.",
       "index": 3,
       "type": "prose"
     },
     {
-      "content": "The other tab",
+      "content": "Technische Hochschule Ingolstadt",
       "index": 4,
       "type": "title"
     },
     {
-      "content": "The other tab",
+      "content": "Nach dem Abitur und meinem FÖJ habe ich an der THI eine Fachhochschule gefunden, an der ich mich wohlfühle. Wenn auch ich erst ein Semester darin verbringen durfte, da bereits mein zweites Semester aufgrund von coronabedingten Abstandsregulationen online durchgeführt wurde. Die ersten beiden Semester habe ich mit einem Schnitt von jeweils 2,14 und 2,12 komplett abgeschlossen und habe auch weiterhin das Ziel, den Bachelor in der Regelstudienzeit (7 Semester) zu erreichen. Im ersten Semester habe ich mich zusätzlich an einer neu gegründeten THI-Bigband als Posaunist beteiligt.",
       "index": 5,
       "type": "title"
     }
