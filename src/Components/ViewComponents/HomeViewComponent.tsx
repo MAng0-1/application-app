@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import Cat01 from '../../data/images/image_1.jpg';
-import Cat02 from '../../data/images/image_2.jpg';
+import Code_img from '../../data/images/Code.jpg';
+import PC_img from '../../data/images/PC.jpeg';
 import { HomeView } from '../../data/text-sources.json';
 import TabBar from '../MinorComponents/TabBarComponent';
 import { SharedStyles as Styles } from '../Shared.resources';
@@ -28,11 +28,11 @@ const HomeViewComponent: FC<Props> = (props) => {
 
       <Styles.Sleeve>
         <Styles.TextCard.Prose>{Text(HomeView, 2)}</Styles.TextCard.Prose>
-        <Styles.ImageCard src={Cat01} alt='cute cat' />
+        <Styles.ImageCard src={PC_img} alt='My PC, case from XP-Era' />
       </Styles.Sleeve>
 
       <Styles.Sleeve>
-        <Styles.ImageCard src={Cat02} alt='sleepy cat' />
+        <Styles.ImageCard src={Code_img} alt='Stock image of code' />
         <Styles.TextCard.Prose>{Text(HomeView, 3)}</Styles.TextCard.Prose>
       </Styles.Sleeve>
 
@@ -48,15 +48,6 @@ const HomeViewComponent: FC<Props> = (props) => {
       <Styles.Sleeve>
         <Styles.TextCard.Quote>{Text(HomeView, 8)}</Styles.TextCard.Quote>
       </Styles.Sleeve>
-      {/* 
-      <Styles.Sleeve>
-        <Styles.ImageCard src={Cat03} alt='curious cat' widthP={50} />
-      </Styles.Sleeve>
-
-      <Styles.Sleeve>
-        <Styles.TextCard.Heading>Radio Quarantino be like:</Styles.TextCard.Heading>
-        <Styles.ImageCard src={CatJam} alt='catjam pog' />
-      </Styles.Sleeve> */}
     </Styles.ContentContainer>
   );
 };

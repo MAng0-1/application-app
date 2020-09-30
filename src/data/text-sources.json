@@ -16,7 +16,7 @@
       "type": "prose"
     },
     {
-      "content": "Programmieren selbst war mir auch schon immer im Hinterkopf, wenn ich es auch nie wirklich als Hobby angesehen habe. Mir war schlicht und ergreifend die Einstiegsbarriere zu groß, vor allem ohne wirklichen 'Startpunkt' oder 'Lehrer' und einer unüberblickbaren Masse an Information im Internet. Deswegen hat auch der Informatik-Unterricht am Gymnasium mein Interesse in diese Richtung erstmals geweckt, auch wenn wir damals eher theoretisches Wissen vermittelt bekommen haben. Erst im Studium selbst habe ich durch die Praktika und Praxisphasen im Betrieb sowohl eine Umgebung von erfahrenen Programmierern, als auch einen graduellen aber tiefgreifenden und umfassenden Einstieg in die Informatik erleben dürfen.",
+      "content": "Programmieren selbst war mir auch schon immer im Hinterkopf, wenn ich es auch nie wirklich als Hobby angesehen habe. Mir war schlicht und ergreifend die Einstiegsbarriere zu groß, vor allem ohne wirklichen 'Startpunkt' oder 'Lehrer' und einer unüberblickbaren Masse an Information im Internet. Deswegen hat auch der Informatik-Unterricht am Gymnasium mein Interesse in diese Richtung erstmals geweckt, auch wenn wir damals eher theoretisches Wissen vermittelt bekommen haben. Erst im Studium selbst habe ich durch Unterricht, Praktika und Praxisphasen im Betrieb sowohl eine Umgebung von erfahrenen Programmierern, als auch einen graduellen aber tiefgreifenden und umfassenden Einstieg in die Informatik erleben dürfen.",
       "index": 3,
       "type": "prose"
     },
@@ -31,12 +31,12 @@
       "type": "prose"
     },
     {
-      "content": "Dass stets etwas neues zu lernen ist. Coding ist eigentlich vom Fähigkeits-Anspruch immer nach oben offen. Man kann zwar heutzutage libraries von überall anders einbinden und sich so die Arbeit leichter machen, um aber genau die Funktionalität zu erreichen, die man haben will, ist es oft effizienter, diese selbst zu bauen. Dieses Prinzip zieht sich dann von Frameworks über Sprachen bis hin zu Betriebssystemen. Es gibt also immer etwas zu lernen, wodurch man seinen Code noch effizienter gestalten kann.",
+      "content": "Dass stets etwas neues zu lernen ist. Beim Coding ist eigentlich vom Fähigkeits-Anspruch immer noch etwas zu lernen. Man kann zwar heutzutage Libraries von überall anders einbinden und sich so die Arbeit leichter machen, um aber genau die Funktionalität zu erreichen, die man haben will, ist es oft effizienter diese selbst zu bauen. Dieses Prinzip zieht sich dann von Frameworks über Sprachen bis hin zu Betriebssystemen. Zumal auch von Community und Industrie rund um die Uhr neue Fortschitte veröffentlicht werden. Es gibt also immer etwas zu lernen, wodurch man seinen Code noch effizienter gestalten kann.",
       "index": 6,
       "type": "prose"
     },
     {
-      "content": "Die Open-Source-Mentalität. Als (manchmal zu) sparsamer Mensch gefällt mir das Prinzip von Open-Source und generell der Offenheit, die im Bereich Engineering herrscht sehr. In Zeiten, in denen bestehende Urheberrechts-Strukturen trotz globaler Vernetzung auch im Internet durchgesetzt werden sollen, ist Open-Source eine erfrischende Denkweise.",
+      "content": "Die Open-Source-Mentalität. Als (manchmal zu) sparsamer Mensch gefällt mir das Prinzip von Open-Source und generell der Offenheit, die im Bereich Engineering herrscht sehr. In einer global vernetzten Welt, in der Urheberrechte und geistiges Eigentum heiß diskutiert werden, ist Open-Source eine erfrischende und elegante Denkweise.",
       "index": 7,
       "type": "prose"
     },
@@ -63,7 +63,7 @@
       "type": "title"
     },
     {
-      "content": "Nach der Grundschule wurde das Tassilo-Gymnasium im Nachbarort Simbach zu meiner weiterführenden Schule. Die 8 Jahre (G8) Schulzeit dort, später im technischen Zweig, beschloss ich mit einem Abiturschnitt von 1,7. Lieblingsfächer kann ich rückblickend nicht angeben, da diese zu sehr von der Lehrkraft abgehangen haben. Außerhalb der Pflichtfächer beteiligte ich in den späteren Jahren immer gerne am Schulchor des Gymnasiums.",
+      "content": "Nach der Grundschule wurde das Tassilo-Gymnasium im Nachbarort Simbach zu meiner weiterführenden Schule. Die 8 Jahre (G8) Schulzeit dort, später im naturwissenschaftlichen Zweig, beschloss ich mit einem Abiturschnitt von 1,7. Lieblingsfächer kann ich rückblickend nicht angeben, da diese zu sehr von der Lehrkraft abgehangen haben. Außerhalb der Pflichtfächer beteiligte ich in den späteren Jahren immer gerne am Schulchor des Gymnasiums.",
       "index": 3,
       "type": "prose"
     },
@@ -73,7 +73,7 @@
       "type": "title"
     },
     {
-      "content": "Nach dem Abitur und meinem FÖJ habe ich an der THI eine Fachhochschule gefunden, an der ich mich wohlfühle. Wenn auch ich erst ein Semester darin verbringen durfte, da bereits mein zweites Semester aufgrund von coronabedingten Abstandsregulationen online durchgeführt wurde. Die ersten beiden Semester habe ich mit einem Schnitt von jeweils 2,14 und 2,12 komplett abgeschlossen und habe auch weiterhin das Ziel, den Bachelor in der Regelstudienzeit (7 Semester) zu erreichen. Im ersten Semester habe ich mich zusätzlich an einer neu gegründeten THI-Bigband als Posaunist beteiligt.",
+      "content": "Nach dem Abitur und meinem FÖJ habe ich an der THI eine Fachhochschule gefunden, an der ich mich derzeit wohlfühle. Wenn ich auch erst ein Semester darin verbringen durfte, da bereits mein zweites Semester aufgrund von coronabedingten Abstandsregulationen online durchgeführt wurde. Die ersten beiden Semester habe ich mit einem Schnitt von jeweils 2,14 und 2,12 komplett abgeschlossen und habe auch weiterhin das Ziel, den Bachelor in der Regelstudienzeit (7 Semester) zu erreichen. Im ersten Semester habe ich mich zusätzlich an einer neu gegründeten THI-Bigband als Posaunist beteiligt.",
       "index": 5,
       "type": "prose"
     }
@@ -110,7 +110,7 @@
       "type": "prose"
     },
     {
-      "content": "Verwendete Technologie: Arduino IDE ",
+      "content": "Verwendete Technologie: Arduino IDE (C/C++)",
       "index": 6,
       "type": "prose"
     },
@@ -142,7 +142,7 @@
       "type": "heading"
     },
     {
-      "content": " Diese Website ist basiert auf React/Typescript, welches die Kombination ist, die ich bei Centigrade bisher gelernt habe. Architektur des Programms, sowie eingebundene funktionale Libraries sind aus der Egogramm-App übernommen. Allerdings habe ich versucht, möglichst auf Komponenten-Libraries zu verzichten. Alle Funktionalitäten auf dieser Website (bis auf das Routing) sind von mir selbst erstellt und benutzt (Topnav, Accordion, Tab-Bar). Die Seite soll einen 'anfassbaren' aktuellen Wissensstand vermitteln und als Arbeitsprobe dienen.",
+      "content": " Diese Website ist basiert auf React/Typescript, welches die Kombination ist, die ich bei Centigrade bisher gelernt habe. Architektur des Programms, sowie eingebundene Dev-Dependencies sind aus der Egogramm-App übernommen. Allerdings habe ich versucht, möglichst auf Komponenten-Libraries zu verzichten. Alle Funktionalitäten auf dieser Website (bis auf das Routing) sind von mir selbst erstellt und benutzt (Topnav, Accordion, Tab-Bar). Die Seite soll einen 'anfassbaren' aktuellen Wissensstand vermitteln und als Arbeitsprobe dienen.",
       "index": 1,
       "type": "prose"
     }
