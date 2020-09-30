@@ -43,7 +43,7 @@ const ProjectsViewComponent: FC<Props> = (props) => {
               <Styles.ImageCard
                 src={Arduino}
                 alt={'Arduino Punchclock'}
-                style={{ marginRight: '2em' }}
+                style={{ marginRight: '2rem' }}
               />
               <Styles.ImageCard src={Schaltplan} alt={'Arduino Schaltplan'} />
             </Styles.Sleeve>
@@ -62,11 +62,11 @@ const ProjectsViewComponent: FC<Props> = (props) => {
               <Styles.ImageCard
                 src={Egogramm1}
                 alt={'Egogramm Fragebogen-Ansicht'}
-                style={{ marginRight: '2em', border: 'solid black 1px' }}
+                style={{ marginRight: '2rem', border: 'solid black 1px' }}
               />
               <Styles.ImageCard src={Egogramm2} alt={'Egogramm Ergebnis-Ansicht'} />
             </Styles.Sleeve>
-            <a href={undefined}> Link zum Repository noch nicht verfügbar </a>
+            <div> Link zum Repository noch nicht verfügbar </div>
           </Accordion>
         </Styles.ContentContainer>
         <Styles.Sleeve>

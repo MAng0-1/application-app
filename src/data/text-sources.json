@@ -36,7 +36,7 @@
       "type": "prose"
     },
     {
-      "content": "Die Open-Source-Mentalität. Als (manchmal zu) sparsamer Mensch gefällt mir das Prinzip von Open-Source und generell der Offenheit, die im Bereich Engineering herrscht sehr. In einer global vernetzten Welt, in der Urheberrechte auf geistiges Eigentum heiß diskutiert werden, ist Open-Source eine erfrischende und elegante Denkweise.",
+      "content": "Die Open-Source-Mentalität. Als (manchmal zu) sparsamer Mensch gefällt mir das Prinzip von Open-Source und generell der Offenheit, die im Bereich Engineering herrscht sehr. In einer global vernetzten Welt, in der Urheberrechte und geistiges Eigentum heiß diskutiert werden, ist Open-Source eine erfrischende und elegante Denkweise.",
       "index": 7,
       "type": "prose"
     },
@@ -142,7 +142,7 @@
       "type": "heading"
     },
     {
-      "content": " Diese Website ist basiert auf React/Typescript, welches die Kombination ist, die ich bei Centigrade bisher gelernt habe. Architektur des Programms, sowie eingebundene funktionale Libraries sind aus der Egogramm-App übernommen. Allerdings habe ich versucht, möglichst auf Komponenten-Libraries zu verzichten. Alle Funktionalitäten auf dieser Website (bis auf das Routing) sind von mir selbst erstellt und benutzt (Topnav, Accordion, Tab-Bar). Die Seite soll einen 'anfassbaren' aktuellen Wissensstand vermitteln und als Arbeitsprobe dienen.",
+      "content": " Diese Website ist basiert auf React/Typescript, welches die Kombination ist, die ich bei Centigrade bisher gelernt habe. Architektur des Programms, sowie eingebundene Dev-Dependencies sind aus der Egogramm-App übernommen. Allerdings habe ich versucht, möglichst auf Komponenten-Libraries zu verzichten. Alle Funktionalitäten auf dieser Website (bis auf das Routing) sind von mir selbst erstellt und benutzt (Topnav, Accordion, Tab-Bar). Die Seite soll einen 'anfassbaren' aktuellen Wissensstand vermitteln und als Arbeitsprobe dienen.",
       "index": 1,
       "type": "prose"
     }
