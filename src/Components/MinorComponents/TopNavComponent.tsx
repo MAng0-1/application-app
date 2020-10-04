@@ -4,6 +4,7 @@ import { TopNavStyles as Styles } from './Minor.resources';
 
 type Props = {};
 
+//returns current page, used at refresh
 function mapLocation(pathname: string): number {
   switch (pathname) {
     case '/academics':

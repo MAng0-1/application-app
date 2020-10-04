@@ -23,7 +23,7 @@ class AccordionComponent extends Component<Props, State> {
   }
 
   handleClick(): boolean | undefined {
-    //to accomodate measuring the panel in componentDidMount, the transition property is introduced via the first click
+    //to accomodate measuring the panel in componentDidMount, the transition (animation) property is introduced via the first click
     if (this.state.isTransitionActive === false) {
       this.setState({
         isTransitionActive: this.panelRef.current?.classList.toggle('with-transition'),

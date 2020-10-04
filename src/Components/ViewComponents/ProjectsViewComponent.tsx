@@ -25,6 +25,7 @@ const ProjectsViewComponent: FC<Props> = (props) => {
   return (
     <Styles.ContentContainer>
       <Styles.TextCard.Heading>{Text(CurrentView, 10)}</Styles.TextCard.Heading>
+
       <TabBar titles={[Text(CurrentView, 0), Text(CurrentView, 1), Text(CurrentView, 2)]}>
         <Styles.ContentContainer>
           <Accordion title={Text(CurrentView, 3)}>
@@ -49,6 +50,7 @@ const ProjectsViewComponent: FC<Props> = (props) => {
             </Styles.Sleeve>
             <a href={'https://github.com/Qkey01/arduino-punchclock'}>Zum Github Repository</a>
           </Accordion>
+
           <Accordion title={Text(CurrentView, 7)}>
             <Styles.Sleeve>
               <Styles.TextCard.Prose>
