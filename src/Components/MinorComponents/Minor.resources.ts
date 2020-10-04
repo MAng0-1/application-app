@@ -62,7 +62,7 @@ export const AccordionStyles = {
       max-height: ${(props) => props.ph}px;
     }
     &.with-transition {
-      transition: max-height 0.25s ease-in-out, padding 0.2s ease-in-out, margin 0.2s ease-in-out;
+      transition: max-height 0.25s ease-in-out, padding 0.2s ease-in-out;
     }
   `,
   AccordionContainer: styled.div`
@@ -94,9 +94,9 @@ export const TabBarStyles = {
     align-items: center;
   `,
 
+  //only displays content of nth child, which corresponds to the content of the selected tab
   TabContentContainer: styled.div<{ showChild: number }>`
     display: contents;
-
     & > * {
       display: none;
     }
@@ -127,14 +127,15 @@ export const TabBarStyles = {
       padding-right: 0.45em;
     }
   `,
-
+  //buttonW: width of all the TabButtons, selected: currently selected TabButton
+  //note: TabSlider needs to be the child directly after the TabButtons
   TabSlider: styled.div<{ buttonW: number[]; selected: number }>`
     height: 0.26em;
     background-color: darkslategrey;
     width: ${(p) => p.buttonW[p.selected - 1]}px;
     position: relative;
     align-self: flex-end;
-
+    //TabSlider x-axis offset is the negative sum of widths of be TabButtons (from right to left)
     left: ${(p) => {
       let val: number = 0;
       for (let i: number = p.buttonW.length - 1; i >= p.selected - 1; i--) val = val - p.buttonW[i];

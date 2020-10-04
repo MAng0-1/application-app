@@ -9,6 +9,7 @@ import ProjectsViewComponent from './ViewComponents/ProjectsViewComponent';
 
 type Props = {};
 
+//returns the Text of the specified object and index, gets passed down to the ViewComponents
 function getStoredText(
   CurrentView: {
     content: string;

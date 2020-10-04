@@ -10,8 +10,6 @@ type State = {
 };
 
 class TabBarComponent extends Component<Props, State> {
-  // tabButtons: JSX.Element[];
-  contentRef: React.RefObject<HTMLDivElement>;
   buttonRef: React.RefObject<HTMLDivElement> | null;
   setButtonRef: (e: any) => void;
   buttonWidth: number[] = [];
@@ -19,7 +17,6 @@ class TabBarComponent extends Component<Props, State> {
   constructor(props: Props) {
     super(props);
     this.state = { selectedTab: 0 };
-    this.contentRef = React.createRef();
     this.buttonRef = null;
     this.setButtonRef = (element) => {
       this.buttonRef = element;
